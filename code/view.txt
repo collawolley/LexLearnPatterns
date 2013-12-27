@@ -1,0 +1,11 @@
+['__skip_if', '__intensifier', '__male_entity', '__female_entity', '__longation', '__take_another_word_if', '__entity', '__negators', '__end_of_sentence_pointer', '__norm_start_letter', '__norm_any_where', '__pointer']
+
+
+
+
+
+end_of_sentence_pointer
+intensifier
+pointer
+female_entity
+male_entity
