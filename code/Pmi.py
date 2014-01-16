@@ -153,7 +153,7 @@ if args.pmi:
                 negcount+=1 
 
 
-            for word in words:
+             for word in words:
                 if word in tweet:
                     if "POS" in polarity:
                         pmi_count[word][0] +=1                                     
@@ -167,6 +167,8 @@ if args.pmi:
 
         if (p[0] != 0 and p[1] != 0 ):
 
+            px = float(len([ line for line in taggedTweets if w in line]))/allTweets
+
             pXpos = float(p[0])/allTweets
             pXneg = float(p[1])/allTweets        
             pPos = float(poscount)/allTweets
@@ -174,8 +176,8 @@ if args.pmi:
 
             den_pos = -1 * math.log(pXpos,2)
             den_neg = -1 * math.log(pXneg,2)
-            pmi_pos = math.log(float(pXpos)/(pPos*pNeg))
-            pmi_neg = math.log(float(pXneg)/(pPos*pNeg))
+            pmi_pos = math.log(float(pXpos)/(pPos*px))
+            pmi_neg = math.log(float(pXneg)/(pNeg*px))
 
 
             norm_pmi_pos = float(pmi_pos)/den_pos
