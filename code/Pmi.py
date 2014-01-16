@@ -75,7 +75,7 @@ del lex
 ################
 
 in_file = open(args.input ,'r')
-out_file = open(args.output, 'w')
+out_file = open(args.output, 'w+')
 taggedTweets = ""
 
 #annotating Tweets File:
@@ -165,11 +165,6 @@ if args.pmi:
     allTweets = len(taggedTweets)
     for w , p in pmi_count.items():
 
-        print p[0] 
-        print p[1]
-        print poscount
-        print negcount
-
         if (p[0] != 0 and p[1] != 0 ):
 
             pXpos = float(p[0])/allTweets
@@ -192,10 +187,10 @@ if args.pmi:
             if (p[1] == 0):
                 norm_pmi_neg = 0
 
-    print norm_pmi_pos
-    print norm_pmi_neg
-    print norm_pmi_pos > norm_pmi_neg
-    out_file.write(w + "\t"+ str(p[0]+p[1]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") + "\n")
+        print norm_pmi_pos
+        print norm_pmi_neg
+        print norm_pmi_pos > norm_pmi_neg
+        out_file.write(w + "\t"+ str(p[0]+p[1]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") + "\n")
 
 
 in_file.close()
