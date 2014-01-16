@@ -153,7 +153,7 @@ if args.pmi:
                 negcount+=1 
 
 
-             for word in words:
+            for word in words:
                 if word in tweet:
                     if "POS" in polarity:
                         pmi_count[word][0] +=1                                     
