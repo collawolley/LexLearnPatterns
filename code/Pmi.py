@@ -22,7 +22,7 @@ parser.add_argument('-i','--input', help='Input Tweets files to Extract subjecti
 parser.add_argument('-o','--output',help='Output file name that contains lexicon after classification with PMI values', required= False)
 parser.add_argument('-t','--tag',help='option for tagging tweets data dump if an unannotated dump is given as input', required= False , action="store_true")
 parser.add_argument('-pmi','--pmi',help='option calculating pmi from tagged tweets dump', required= False , action="store_true")
-
+parser.add_argument('-pmit','--pmit',help='option calculating pmi by counting number of tags from tagged tweets dump', required= False , action="store_true")
 args = parser.parse_args()
 
 ##todo : make set of verifications on the Args in both screnarios , tagging and pmi 
@@ -88,11 +88,14 @@ if args.tag:
     
     counter  = 0 
 
-    for line in tweets:
+    # rgxpart = "("+"|".join(Options["simplenegators"])+")"
+
+    for line in[line for line in tweets if len(line) > 0]:
+
         taggedLine = line
         for w in posLexicon:
 
-            # rgx = "("+"|".join(Options["simplenegators"])+")" + "\s"+ w + "\s"
+            # rgx = rgxpart + "\s"+ w + "\s"
             # taggedLine = re.sub(rgx,"[NEG]",taggedLine)
 
             if " "+w+" " in taggedLine :             
@@ -100,12 +103,13 @@ if args.tag:
 
         for w in negLexicon:
 
-            # rgx = "("+"|".join(Options["simplenegators"])+")" + "\s"+ w + "\s"
+            # rgx = rgxpart + "\s"+ w + "\s"
             # taggedLine = re.sub(rgx,"[POS]",taggedLine)
 
             if " "+w+" " in taggedLine :             
                 taggedLine = taggedLine.replace(w,"[NEG]") + "\n"
 
+        print taggedLine
 
         tag_file.write(taggedLine)
 
@@ -114,6 +118,7 @@ if args.tag:
 
     del tweets
 
+tag_file.close()
 
 #Calculating PMI
 ###################
@@ -121,13 +126,19 @@ if args.tag:
 if args.pmi:
 
     words_file = open(args.lexicon, 'r')
-    words = [w.strip() for w in words_file.read().split("\n") if len(w) > 0 and w not in posLexicon and w not in negLexicon]
+    words = {}
+    for w in words_file.read().split("\n"):
+        warr = w.split("\t")
+        if len(warr) == 2 :
+            words[warr[0]]= warr[1]
+        else:
+            words[warr[0]]= ""
 
     pmi_count = {}
     print "started calculating pmi for "+str(len(words)) +" extracted words"
 
     #initializing pmi index {"word":[poscount negcount]}
-    for word in words:        
+    for word,p in words.items():        
         pmi_count[word] = [0,0]
 
     taggedTweets = in_file.read().split("\n")
@@ -153,7 +164,7 @@ if args.pmi:
                 negcount+=1 
 
 
-            for word in words:
+            for word,p in words.items():
                 if word in tweet:
                     if "POS" in polarity:
                         pmi_count[word][0] +=1                                     
@@ -192,7 +203,7 @@ if args.pmi:
         print norm_pmi_pos
         print norm_pmi_neg
         print norm_pmi_pos > norm_pmi_neg
-        out_file.write(w + "\t"+ str(p[0]+p[1]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") + "\n")
+        out_file.write(w + "\t"+ str(p[0]+p[1]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") +"\t" + words[w] + "\n")
 
 
 in_file.close()
