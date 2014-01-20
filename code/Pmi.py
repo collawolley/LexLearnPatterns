@@ -76,15 +76,16 @@ del lex
 
 in_file = open(args.input ,'r')
 out_file = open(args.output, 'w+')
+
+
 taggedTweets = ""
 
 #annotating Tweets File:
 ########################
 if args.tag:
-
+    tag_file = open("tagged_"+args.input, 'w+')
     print "started Tagging Tweets...."
     tweets = in_file.read().split("\n")
-    tag_file = open("tagged_"+args.input, 'w+')
     
     counter  = 0 
 
@@ -117,8 +118,9 @@ if args.tag:
         if counter % 1000 == 0 : print str(counter) +" tweets Tagged in Thread " 
 
     del tweets
+    tag_file.close()
 
-tag_file.close()
+
 
 #Calculating PMI
 ###################
