@@ -23,6 +23,7 @@ parser.add_argument('-o','--output',help='Output file name that contains lexicon
 parser.add_argument('-t','--tag',help='option for tagging tweets data dump if an unannotated dump is given as input', required= False , action="store_true")
 parser.add_argument('-pmi','--pmi',help='option calculating pmi from tagged tweets dump', required= False , action="store_true")
 parser.add_argument('-pmit','--pmit',help='option calculating pmi by counting number of tags from tagged tweets dump', required= False , action="store_true")
+parser.add_argument('-w','--window',help='take window size around the word', required= False )
 args = parser.parse_args()
 
 ##todo : make set of verifications on the Args in both screnarios , tagging and pmi 
@@ -109,9 +110,7 @@ if args.tag:
 
             if " "+w+" " in taggedLine :             
                 taggedLine = taggedLine.replace(w,"[NEG]") + "\n"
-
-        print taggedLine
-
+    
         tag_file.write(taggedLine)
 
         counter += 1 
@@ -125,7 +124,7 @@ if args.tag:
 #Calculating PMI
 ###################
 
-if args.pmi:
+if args.pmi :
 
     words_file = open(args.lexicon, 'r')
     words = {}
