@@ -202,7 +202,3 @@ if args.uniqandfilter:
 
 in_file.close()
 out_file.close()
-
-
-
-def removeElongation():
