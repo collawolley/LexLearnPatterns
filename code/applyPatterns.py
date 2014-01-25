@@ -114,6 +114,7 @@ in_file = open(args.input, 'r')
 out_file = open(args.output, 'w')
 
 extractedLex = []
+lexWithPatterns = []
 
 counter = 0 
 tweets = in_file.read().split("\n")
@@ -132,13 +133,15 @@ for line in tweets:
 					s = " ".join(c)  + "\t" + pname+"\n"
 					out_file.write(s)
 					extractedLex.append(" ".join(c))
+					lexWithPatterns.append((" ".join(c),pname))
 
 del tweets
 
 
 if args.uniqandfilter:
 	
-	uniq_out_file = open("clean_filter"+args.output, 'w')
+	uniq_out_file = open("uniq_filter"+args.output, 'w')
+	filter_out_file = open("filter"+args.output, 'w')
 	uniqCleanExtractedLex	= set()
 
 	# loading Lexicon file 
@@ -188,6 +191,7 @@ if args.uniqandfilter:
 			if re.match(patternStr,lexword) is None and re.match(patternStr,lexwordshorten) is None :				
 				uniqCleanExtractedLex.add(lexword)
 				extractedLex[i] = lexword
+				lexWithPatterns[i] = [lexWithPatterns[i][0],lexword,lexWithPatterns[i][1]]
 
 	#put all occurrrence of couts of LearntLex in dictionary
 	learnLexCount = {}
@@ -199,7 +203,13 @@ if args.uniqandfilter:
 		s = (w  + "\t" + str(learnLexCount[w])+"\n")
 		uniq_out_file.write(s)
 
+	for k in lexWithPatterns:
+		if len(k) == 3 :
+			s = (k[1]  + "\t" + k[2]+"\n")
+			filter_out_file.write(s)
+
 	uniq_out_file.close()
+	filter_out_file.close()
 
 in_file.close()
 out_file.close()
