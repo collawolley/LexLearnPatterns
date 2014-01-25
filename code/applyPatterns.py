@@ -163,7 +163,7 @@ if args.uniqandfilter:
 
 			#remove elongation more than two occurrences:
 			rgxPart = "(?:"+"|".join(Options["longation"])+")"
-			lexword =  re.sub(r"("+rgxPart+")\1+",r"\1",lexword)			
+			lexword =  re.sub(r"("+rgxPart+")\1\1+",r"\1\1",lexword)			
 
 			#removing all occurrence of sub execlude words
 			for w in execludeWords:
