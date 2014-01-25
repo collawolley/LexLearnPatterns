@@ -2328,7 +2328,6 @@
 فسدت	negative
 فسق	negative
 فسل	negative
-فشخ	negative
 فشر	negative
 فشل	negative
 فشلت	negative
@@ -3272,7 +3271,6 @@
 نصدق	positive
 نصر	positive
 نصرخ	negative
-نصف	positive
 نصلح	positive
 نصمت	negative
 نصيح	negative
