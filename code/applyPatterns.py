@@ -158,7 +158,7 @@ if args.uniqandfilter:
 		if lexword not in seedLexicon and len(lexword) > 1:
 			print lexword
 			execludeWords =  Options["intensifier"]
-			execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،"]
+			execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،","(",")",",",";","*","~","/","\\"]
 			execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"]))
 
 			#removing all occurrence of sub execlude words
