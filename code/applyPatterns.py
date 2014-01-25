@@ -157,19 +157,19 @@ if args.uniqandfilter:
 	for i,lexword in enumerate(extractedLex):		
 		if lexword not in seedLexicon and len(lexword) > 1:
 			# print lexword
-			execludeWords =  Options["intensifier"]
+			execludeWords =  set(list(Options["intensifier"])+list(Options["take_another_word"]))
 			execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،","(",")",",",";","*","~","/","\\"]
-			execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"]))
+			execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"]))
 
 			#remove elongation more than two occurrences:
-			rgxPart = "(?:"+"|".join(Options["longation"])+")"
-			lexword =  re.sub(r"("+rgxPart+")\1\1+",r"\1\1",lexword)			
+			# rgxPart = "(?:"+"|".join(Options["longation"])+")"
+			# lexword =  re.sub(r"("+rgxPart+")\1\1+",r"\1\1",lexword)			
 
 			#removing all occurrence of sub execlude words
 			for w in execludeWords:
-				if " "+w+" " in lexword:
-					lexword = lexword.replace(" "+w+" "," ");
-
+				pattern =  "(\s|^)"+w+"(?=\s|$)"
+				lexword =  re.sub(pattern," ",lexword).strip()
+					
 			#removing anywhere occurrences like dots and commans ..etc
 			for w in execludeAnywhere:			
 				if w in lexword:
@@ -182,7 +182,8 @@ if args.uniqandfilter:
 			pattern = re.compile(patternStr)
 
 			#remove vowel elongation and check that it doesn't exist also 
-			lexwordshorten =  re.sub(r'((?:و|ي|ا|إ|آ))\1+',r"\1",lexword)
+			rgxPart = "(?:"+"|".join(Options["vowel"])+")"
+			lexwordshorten =  re.sub(r'('+ rgxPart +')\1+',r"\1",lexword)
 
 			if re.match(patternStr,lexword) is None and re.match(patternStr,lexwordshorten) is None :				
 				uniqCleanExtractedLex.add(lexword)
