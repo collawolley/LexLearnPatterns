@@ -17,7 +17,13 @@ parser = argparse.ArgumentParser(description='tool to extract set of Subjecitve 
 parser.add_argument('-c','--config', help='Input Config file name',required=True)
 parser.add_argument('-i','--input', help='Input Tweets files to Extract subjective words from',required=True)
 parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= True)
+parser.add_argument('-uf','--uniqandfilter',help='filter extracted lexicon words and save them to clean_uniq_output file with counts', required= False , action="store_true")
+parser.add_argument('-sl','--seedlexicon', help='Input classified lexicon file name',required=False)
 args = parser.parse_args()
+
+if args.uniqandfilter is True and args.seedlexicon is None:
+  parser.error('must specify seedlexicon when choosing [-uf] option')
+
 
 # loading config file
 #######################
@@ -25,6 +31,7 @@ args = parser.parse_args()
 #print("loading config file ....")
 Config = ConfigParser.ConfigParser()
 Config.read(args.config)
+
 def config(section):
     dict1 = {}
     options = Config.options(section)
@@ -106,6 +113,8 @@ for name,pattern in config("patterns").items():
 in_file = open(args.input, 'r')
 out_file = open(args.output, 'w')
 
+extractedLex = []
+
 counter = 0 
 tweets = in_file.read().split("\n")
 for line in tweets:		
@@ -120,10 +129,69 @@ for line in tweets:
 			for capture in res.groups():			
 				if capture is not None and len(capture) > 0 :				
 					c = capture.split(" ")
-					out_file.write(" ".join(c)  + "\t" + pname+"\n")
-
+					s = " ".join(c)  + "\t" + pname+"\n"
+					out_file.write(s)
+					extractedLex.append(" ".join(c))
 
 del tweets
+
+
+if args.uniqandfilter:
+	
+	uniq_out_file = open("clean_filter"+args.output, 'w')
+	uniqCleanExtractedLex	= set()
+
+	# loading Lexicon file 
+	########################
+
+	lex_file = open(args.seedlexicon, 'r')
+	lex = lex_file.read().split("\n")
+	seedLexicon = set()
+
+	for line in lex:		
+	    if len(line) > 0  and "\t" in line:
+	        w = line.split("\t")	       
+	        seedLexicon.add(w[0])	       	        
+	del lex 
+
+	for i,lexword in enumerate(extractedLex):		
+		if lexword not in seedLexicon and len(lexword) > 1:
+			print lexword
+			execludeWords =  Options["intensifier"]
+			execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،"]
+			execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"]))
+
+			#removing all occurrence of sub execlude words
+			for w in execludeWords:
+				if " "+w+" " in lexword:
+					lexword = lexword.replace(" "+w+" "," ");
+
+			#removing anywhere occurrences like dots and commans ..etc
+			for w in execludeAnywhere:			
+				if w in lexword:
+					lexword = lexword.replace(w," ");					
+					lexword = " ".join(lexword.split()).strip()  #remove extra spaces
+
+			#remove if it matches neutral words of intensifiers ..etc
+			rgxPart = "(?:"+"|".join(execludeAll)+")"			
+			patternStr = "^"+rgxPart+"(?:\s+"+rgxPart+")*$"
+			pattern = re.compile(patternStr)
+
+			if re.match(patternStr,lexword) is None:
+				uniqCleanExtractedLex.add(lexword)
+				extractedLex[i] = lexword
+
+	#put all occurrrence of couts of LearntLex in dictionary
+	learnLexCount = {}
+	for w in uniqCleanExtractedLex:
+		learnLexCount[w] = extractedLex.count(w)
+
+	#sort and add to file 
+	for w in sorted(learnLexCount, key=learnLexCount.__getitem__, reverse=True):
+		s = (w  + "\t" + str(learnLexCount[w])+"\n")
+		uniq_out_file.write(s)
+
+	uniq_out_file.close()
 
 in_file.close()
 out_file.close()
