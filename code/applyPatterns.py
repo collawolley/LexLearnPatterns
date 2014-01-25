@@ -156,10 +156,14 @@ if args.uniqandfilter:
 
 	for i,lexword in enumerate(extractedLex):		
 		if lexword not in seedLexicon and len(lexword) > 1:
-			print lexword
+			# print lexword
 			execludeWords =  Options["intensifier"]
 			execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،","(",")",",",";","*","~","/","\\"]
 			execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"]))
+
+			#remove elongation more than two occurrences:
+			rgxPart = "(?:"+"|".join(Options["longation"])+")"
+			lexword =  re.sub(r"("+rgxPart+")\1+",r"\1",lexword)			
 
 			#removing all occurrence of sub execlude words
 			for w in execludeWords:
@@ -172,12 +176,15 @@ if args.uniqandfilter:
 					lexword = lexword.replace(w," ");					
 					lexword = " ".join(lexword.split()).strip()  #remove extra spaces
 
-			#remove if it matches neutral words of intensifiers ..etc
+			#remove if it matches neutral words of intensifiers ..etc			
 			rgxPart = "(?:"+"|".join(execludeAll)+")"			
 			patternStr = "^"+rgxPart+"(?:\s+"+rgxPart+")*$"
 			pattern = re.compile(patternStr)
 
-			if re.match(patternStr,lexword) is None:
+			#remove vowel elongation and check that it doesn't exist also 
+			lexwordshorten =  re.sub(r'((?:و|ي|ا|إ|آ))\1+',r"\1",lexword)
+
+			if re.match(patternStr,lexword) is None and re.match(patternStr,lexwordshorten) is None :				
 				uniqCleanExtractedLex.add(lexword)
 				extractedLex[i] = lexword
 
@@ -195,3 +202,7 @@ if args.uniqandfilter:
 
 in_file.close()
 out_file.close()
+
+
+
+def removeElongation():
