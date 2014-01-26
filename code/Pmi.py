@@ -24,10 +24,10 @@ parser.add_argument('-t','--tag',help='option for tagging tweets data dump if an
 parser.add_argument('-pmi','--pmi',help='option calculating pmi from tagged tweets dump', required= False , action="store_true")
 parser.add_argument('-pmit','--pmit',help='option calculating pmi by counting number of tags from tagged tweets dump', required= False , action="store_true")
 parser.add_argument('-w','--window',help='take window size around the word', required= False )
+parser.add_argument('-wd','--windowDelimiter',help='take window around the word starting and ending with delimiters', required= False, action="store_true")
 args = parser.parse_args()
 
 ##todo : make set of verifications on the Args in both screnarios , tagging and pmi 
-
 
 # loading config file
 #######################
@@ -96,30 +96,24 @@ if args.tag:
 
         taggedLine = line
         for w in posLexicon:
-
-            # rgx = rgxpart + "\s"+ w + "\s"
-            # taggedLine = re.sub(rgx,"[NEG]",taggedLine)
-
-            if " "+w+" " in taggedLine :             
-                taggedLine = taggedLine.replace(w,"[POS]") + "\n"
+            
+            #way faster than regex
+            if taggedLine.startswith(w+" ") or taggedLine.endswith(" "+w) or " "+w+" " in taggedLine:
+                taggedLine = taggedLine.replace(w,"[POS]")
 
         for w in negLexicon:
+            
+            if taggedLine.startswith(w+" ") or taggedLine.endswith(" "+w) or " "+w+" " in taggedLine:
+                taggedLine = taggedLine.replace(w,"[NEG]")
 
-            # rgx = rgxpart + "\s"+ w + "\s"
-            # taggedLine = re.sub(rgx,"[POS]",taggedLine)
 
-            if " "+w+" " in taggedLine :             
-                taggedLine = taggedLine.replace(w,"[NEG]") + "\n"
-    
-        tag_file.write(taggedLine)
+        tag_file.write(taggedLine+"\n")
 
         counter += 1 
         if counter % 1000 == 0 : print str(counter) +" tweets Tagged in Thread " 
 
     del tweets
     tag_file.close()
-
-
 
 #Calculating PMI
 ###################
@@ -154,6 +148,7 @@ if args.pmi :
     for tweet in taggedTweets:
 
         if not ("[POS]" in tweet and "[NEG]" in tweet ) :
+
             polarity = "None"
 
             if "[POS]" in tweet:
@@ -164,8 +159,15 @@ if args.pmi :
                 polarity = "NEG"
                 negcount+=1 
 
-
+            originalTweet = tweet
             for word,p in words.items():
+
+                # if args.windowDelimiter:
+                #to be implemented
+
+                # if args.window is not None:
+                    
+
                 if word in tweet:
                     if "POS" in polarity:
                         pmi_count[word][0] +=1                                     
@@ -190,7 +192,6 @@ if args.pmi :
             den_neg = -1 * math.log(pXneg,2)
             pmi_pos = math.log(float(pXpos)/(pPos*px))
             pmi_neg = math.log(float(pXneg)/(pNeg*px))
-
 
             norm_pmi_pos = float(pmi_pos)/den_pos
             norm_pmi_neg = float(pmi_neg)/den_neg
