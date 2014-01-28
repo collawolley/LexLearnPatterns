@@ -227,7 +227,6 @@ if args.pmi :
                     tweet = takeWindow(tweet,word,-1)
 
                 if len(tweet) > 1 :
-                    print tweet
                     # all if conditions use takeWindow so if it's not "" then word in the the tweet:
                     #count number of occurrence of word to calculate p(w)
                     wordCount[word] +=1 
