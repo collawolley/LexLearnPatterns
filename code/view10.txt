@@ -1,111 +1,1106 @@
-شاطره 	pattern15
+كريم 	pattern14
+سهل 	pattern18
+انيقه 	pattern14
+حليم 	pattern14
+تواب 	pattern14
+جاهل 	pattern15
+مغرور، 	pattern14
+مزه 	pattern8
+سمعتها 	pattern18
+غبي 	pattern15
+ارف ديه ايه الظلم ده ايه الناس ديه بتعيش ازاي بجد حاجه تقرف وتقهر وقال نطهر قال	pattern3
 كتير منيح 	pattern15
+كريم 	pattern14
+غفور 	pattern14
+محترم و 	pattern18
 جدا رائع 	pattern15
-علي خواتك 	pattern15
-شتيمه 	pattern15
+رخمه	pattern3
+مفتريه	pattern3
+جدعه 	pattern7
+خلوق 	pattern18
+احبش 	pattern18
+عبيط 	pattern8
+فاشل 	pattern15
+كريم 	pattern14
+كيوت 	pattern18
+راقي 	pattern18
 مفكر 	pattern15
-محتشمه 	pattern15
+كريم 	pattern14
+غفور 	pattern14
+مهندس 	pattern14
+اسطوره 	pattern14
+داهيه 	pattern14
+جميل 	pattern7
+صحرا 	pattern14
+ضب 	pattern14
+اخر تعيس 	pattern7
+قحبه 	pattern14
+بنت المخانيث 	pattern14
+مقزز همجي 	pattern15
+كذاب 	pattern15
 متميز 	pattern15
+كريم 	pattern14
+غفور 	pattern14
+مغرور 	pattern14
+اتدلع 	pattern8
+شكلها جدعه 	pattern8
+فتوكه 	pattern7
+مزه 	pattern8
+بعزك 	pattern18
+مبدع جدا 	pattern8
+محترم 	pattern7
+احساسه عالي 	pattern18
+سميع الدعاء 	pattern14
+محترم 	pattern8
+حاجته نضيفه 	pattern8
+فقيه بلنتي لنصصصصصر 	pattern14
+متخلفين بيتفرجوا 	pattern7
+اخر تعيس 	pattern7
+اجبن خلق الله 	pattern14
+مغرور... 	pattern14
+قذر 	pattern14
+سهل 	pattern18
+جماعه 	pattern14
+اولاد الوسخه 	pattern14
+ارهابيين 	pattern14
+معرص 	pattern8
+زنديق 	pattern14
+فاسق 	pattern14
 ناجح 	pattern15
+ابن المتناكه 	pattern14
+خروف 	pattern14
+ذوقك عالي 	pattern18
+جامد 	pattern7
+زياط 	pattern15
+زباله 	pattern14
+وطنيه 	pattern8
+ذوقك عالي 	pattern18
+برنس 	pattern8
 ناقص 	pattern15
-كويس 	pattern15
+وسخ 	pattern14
+محترم و 	pattern18
 جدا رائع 	pattern15
+وسخه 	pattern7
+عسليه 	pattern8
+كريم 	pattern14
+محترم 	pattern7
+خبؤ 	pattern8
 مميز 	pattern15
-اخواتي قحاب 	pattern15
+بنتش كلب 	pattern7
+كويسه 	pattern7
+ايممممانك 	pattern7
+بهيمة 	pattern14
+محترم 	pattern7
+بضان 	pattern7
+سهل 	pattern18
+ممل 	pattern7
+عره 	pattern14
+عبد السيسي 	pattern14
+عظيم 	pattern7
+سهل 	pattern18
+عسل 	pattern14
+كريم 	pattern14
+كلب 	pattern14
+لقيط 	pattern14
+اناني 	pattern14
+جامد 	pattern7
+حاجه حلوه 	pattern8
+حشره 	pattern14
+ضحكته جامده 	pattern8
+مصر غلبان 	pattern15
+جبار 	pattern14
+كويس 	pattern7
+جامد 	pattern8
+جحلوط 	pattern14
+محترم 	pattern8
+شخص متناك 	pattern13
+خول 	pattern14
+بعزك 	pattern18
+الشخره مظلومين 	pattern18
+في حاجات 	pattern8
+محبوب 	pattern7
+الله ضحكت 	pattern18
+خنزير 	pattern14
+نجس 	pattern14
+�	pattern9
+محترم 	pattern7
+�	pattern9
+زباله 	pattern18
+معرص 	pattern14
+عيل نكسجي حمار 	pattern13
 صادق 	pattern15
+ممل 	pattern7
 غريب 	pattern15
+رائع 	pattern7
+نحن سعداء 	pattern18
+تعب 	pattern8
+خائن 	pattern14
+عمتي مريضه 	pattern7
+مسليني 	pattern14
+الشخره مظلومين 	pattern18
+استغلالي 	pattern13
+كبير 	pattern14
+محارب 	pattern14
+قطري 	pattern14
+وسخه 	pattern7
+جدعه و 	pattern7
+جامده 	pattern8
+شخصيه محترمه 	pattern8
 رائع وذوق 	pattern15
-محجبه محتشمه 	pattern15
+شيوعي 	pattern14
+جبان 	pattern14
+عبد الروس 	pattern14
+محترم 	pattern8
+غبى 	pattern14
+عميل 	pattern14
+محترم 	pattern7
+نحن سعداء 	pattern18
+محترم 	pattern7
+اجبن خلق الله 	pattern14
+�	pattern9
+خطير جدا 	pattern7
+طيب 	pattern15
+كريم 	pattern14
+شايف نفسه 	pattern7
+علي 	pattern14
+حكيم 	pattern14
+اللي اسمك اسكندر 	pattern14
+جامد 	pattern8
 طيب 	pattern15
 عرص 	pattern15
-علي خواتك 	pattern15
+ابو وشين 	pattern14
+اهبل 	pattern14
+حليم 	pattern14
+طموح 	pattern7
+عسل 	pattern14
+خطير 	pattern7
+متكبر 	pattern7
+كلب 	pattern7
+ولاد كلب 	pattern8
+تاعب نفسه 	pattern8
+طموح 	pattern7
+محترم 	pattern8
+عسليه 	pattern7
+محترم 	pattern7
+عسل 	pattern14
+اشطه 	pattern14
+خائن 	pattern14
+كلب 	pattern14
+رخيص 	pattern18
+لواطي 	pattern14
+خول 	pattern14
+متخلف 	pattern14
+ارهابي 	pattern14
+مبدع جدا 	pattern8
+مبدع 	pattern8
+غفور 	pattern14
+ودود 	pattern14
+قدوس 	pattern14
+ابن وسخه 	pattern13
+محترمه 	pattern7
+مش هتموت 	pattern8
+محترم 	pattern8
+�	pattern9
+جاموسه 	pattern13
+فيها ايادي 	pattern7
+بتحبنا 	pattern8
 وطني 	pattern15
+نزيه 	pattern18
+لذيذه 	pattern7
+ارهابى 	pattern14
+حيوان 	pattern14
+عبيط 	pattern14
+بارد 	pattern14
 محترم فعلا 	pattern15
+سيسي 	pattern14
+واطي 	pattern14
+كويسه 	pattern7
+عقدت ناس 	pattern8
+ابن الزانيه 	pattern14
+محترم 	pattern7
+حاجته نضيفه 	pattern8
+تهدم 	pattern18
+كريم 	pattern14
+غفور 	pattern14
+صدامي 	pattern7
+انزاجي ميفرقش 	pattern18
+بحبها 	pattern18
 غالي 	pattern15
 فاضل 	pattern15
+رموطه 	pattern14
+محترم 	pattern7
+محمود 	pattern14
+مؤدب 	pattern14
+طيب 	pattern14
+بضان 	pattern7
+جاهل 	pattern14
+بتضحك 	pattern15
+مطمئن 	pattern15
+سهل 	pattern18
+شرموطه 	pattern14
+حاجه حلوه 	pattern8
+خطير جدا 	pattern7
+تعب 	pattern8
+شيعي 	pattern14
+صوفي 	pattern14
+مبدع 	pattern14
+وطني 	pattern14
 نصاب 	pattern15
+مهمه 	pattern8
+حثالة 	pattern14
+طعس تفووووو عليك 	pattern14
+شعب مصر 	pattern14
+حر 	pattern14
+قذر 	pattern14
+انت الاروعجميل 	pattern18
+حشره 	pattern14
+قطري 	pattern14
+ابن موزه 	pattern14
+خنزير 	pattern14
+نجس 	pattern14
 اخواتي قحاب 	pattern15
+قحبه 	pattern14
 غالي 	pattern15
+مريضه	pattern3
+انا بعزك 	pattern18
 كويس 	pattern15
+سهل 	pattern18
+جدعه 	pattern8
+جدع 	pattern18
 محترم 	pattern15
+فاضل بعيد 	pattern7
 محترم فعلا 	pattern15
+مغرور 	pattern14
+طيبان 	pattern7
 كبير 	pattern15
-ده جميل 	pattern15
-علي خواتك 	pattern15
+محترم 	pattern18
+جميل 	pattern17
+ممتع 	pattern18
+اخر تعيس 	pattern7
+بتاع سموحه 	pattern14
+رومانسي طموح 	pattern7
+رائع 	pattern18
+معروف او 	pattern15
+متحجر 	pattern14
+طفران 	pattern14
+متخلف 	pattern8
+كتكوت 	pattern8
+كنت بحبه 	pattern8
+محترمه 	pattern7
+تاني 	pattern7
+ممتع 	pattern18
+نظيف جداً 	pattern7
 كويس 	pattern15
-جابولك هديه 	pattern15
-احبه 	pattern15
-اسمها حنان 	pattern15
-الحيوان 	pattern15
-ثواني 	pattern15
+عبيط 	pattern8
+نظيف جداً 	pattern7
+نظيف جداً 	pattern7
+نظيف جداً 	pattern7
+نظيف جداً 	pattern7
+مسليني 	pattern14
+خواطرك 	pattern18
+تاني 	pattern7
+نعجه 	pattern14
+محترم 	pattern7
+خطر 	pattern7
+تفتح النفس 	pattern18
+كانت سيس 	pattern8
+لا و 	pattern7
+جامد 	pattern8
+وسخه 	pattern7
+متخلف 	pattern14
+يشل جيش 	pattern7
+فيها تعريس 	pattern8
+اسطوره 	pattern8
+بننسي بسرعه 	pattern8
+ما لهاش 	pattern8
+خطير جدا 	pattern7
+ساداتي 	pattern7
+فقيع 	pattern7
+طيب 	pattern15
+كيوت 	pattern18
+عجيب	pattern3
+مش هتموت 	pattern8
+جميله 	pattern7
+نعجه 	pattern14
+خائن 	pattern14
+محترم 	pattern7
+رائع 	pattern7
+وثوري بحترمك 	pattern7
+وقح 	pattern18
+باع 	pattern7
+مجيد 	pattern14
+كريم 	pattern14
+حاقد 	pattern7
+مش 	pattern8
+توقيته متاخر 	pattern18
+اتبهدلت 	pattern8
+حنين 	pattern8
+خنيث 	pattern14
+شرموطه 	pattern14
+رضا 	pattern18
+او اغاني 	pattern15
+غالي علي 	pattern7
 يخونك 	pattern15
 جدعه 	pattern15
+جدعه 	pattern7
+متخلف 	pattern14
+جدار 	pattern14
+مريض 	pattern14
+بهتم بيه 	pattern7
+مؤذي 	pattern7
 الدرس سهل 	pattern15
-بتغتصب 	pattern15
-فيّاضه مشاعر 	pattern15
-ده محترم 	pattern15
+مسليه 	pattern7
+عايزه واحد 	pattern8
+كان عظيم 	pattern8
+حاجات 	pattern7
+الوسخ جدا 	pattern18
+مش هيقعد 	pattern7
+بتاعت نمر 	pattern8
+عسل 	pattern8
+معجبه 	pattern8
+وشها جامد 	pattern8
+صحي 	pattern7
+ملهاش 	pattern8
+اتهبلت علينا 	pattern8
+بقت معفنه 	pattern8
+جوها سيء 	pattern8
+عايزلها 	pattern8
+عبيطه 	pattern8
+غريبه 	pattern8
+فزوره 	pattern8
+لسه قدامها 	pattern8
+غلابه 	pattern8
+والله بشتم 	pattern8
+نذل 	pattern14
+منحط 	pattern14
+متعب 	pattern8
+ضعيفه جدا 	pattern8
+جامده 	pattern8
+رومانسي طموح 	pattern7
+خفيفه 	pattern14
+مثقف 	pattern7
+محترم 	pattern17
+مختلفه 	pattern7
+السعاده حلو 	pattern8
+بتضحك 	pattern15
+هادف 	pattern18
+ذكي 	pattern7
+مسالم 	pattern7
+مقرف 	pattern7
+ممحونه 	pattern7
+ذكي 	pattern7
+اتشحور 	pattern8
+جااامد 	pattern8
+جامد 	pattern8
+خبؤ 	pattern8
+عبيط 	pattern8
+عبيط 	pattern8
+عبيط 	pattern8
+عبيط 	pattern8
+محترم 	pattern8
+محترم 	pattern8
+مفيد 	pattern7
+عصبيه 	pattern8
+قويه جدا 	pattern8
+حنينه 	pattern8
+موهوب وصوته 	pattern7
+جميله 	pattern7
+وطني و 	pattern18
+عظيم 	pattern7
+عظيم 	pattern7
+عظيم 	pattern7
+دمه خفيف 	pattern15
+عبيط 	pattern8
+عظيم 	pattern8
+محروقه 	pattern8
+مش هتموت 	pattern8
+انيقه 	pattern18
+سخيف 	pattern7
+الشيخ 	pattern15
+سخيف 	pattern7
+شبه 	pattern8
+مش هتموت 	pattern8
+خطير جدا 	pattern7
+شمال 	pattern7
+قذر 	pattern7
+اصلا واضح 	pattern8
+محترم 	pattern7
+شعب مصر 	pattern14
+حر 	pattern14
+مضحك 	pattern7
+الله 	pattern14
+كريم 	pattern14
+رحمن 	pattern14
+عادل 	pattern14
+قوي 	pattern14
+قدير 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+واسع العطاء 	pattern14
+كريم 	pattern14
+كريم 	pattern14
+قادر 	pattern14
+انهزامي 	pattern15
+محترم 	pattern8
 رائع 	pattern15
 دجل 	pattern15
-ده برنس 	pattern15
+بجد ملهاش 	pattern8
+نزيه 	pattern18
+الكلب دي 	pattern7
+وراه سر 	pattern8
+ممل 	pattern7
+قرده 	pattern13
+فاهماها غلط 	pattern7
+عظيم 	pattern7
+اتفشخ 	pattern8
+جدا 	pattern8
+جاهل 	pattern15
+عادي 	pattern7
+مريضه 	pattern7
+ذليل 	pattern15
+كافر 	pattern15
+روقني 	pattern8
+ذكي 	pattern8
+برنس 	pattern17
+جامد 	pattern8
+مبدع 	pattern8
+محترم 	pattern8
+مؤلم 	pattern7
+اتدلع 	pattern8
+خطر جدا 	pattern7
+شبه امي 	pattern8
+مبسطين الحوار 	pattern18
+دماغها 	pattern8
+راجل كبير علق 	pattern13
+طلعتي كور"واطيا" 	pattern13
+طويطر مجنون 	pattern13
+عظيم 	pattern7
+كان بيهلفط 	pattern8
+مش هتموت 	pattern8
+كتوم 	pattern7
+تاني 	pattern7
+صبوره 	pattern18
+اديته اعذار 	pattern8
+مز 	pattern8
+بضيع وقت 	pattern18
+مُتعب 	pattern7
+عبيطه 	pattern7
+اتبهدل 	pattern8
+متطفل 	pattern15
+مبادئ غريبه 	pattern7
+هارتاح 	pattern8
+فيه حالات 	pattern8
+عظيم 	pattern18
 محترم 	pattern15
-احسن 	pattern15
-دادن 	pattern15
-المعرصه 	pattern15
-بلد 	pattern15
-بسيطه 	pattern15
+مثقف 	pattern7
+ناجح 	pattern7
+سيء 	pattern7
+تتكلميش 	pattern7
+رومانسي طموح 	pattern7
+طموح 	pattern7
+عدائي 	pattern7
+عزيز 	pattern7
+كيوت 	pattern7
+لطيف احبك 	pattern7
+مثقف ومحترم 	pattern7
+نقي 	pattern7
+وطني 	pattern8
+خطير جدا 	pattern7
+عظيم جدا 	pattern7
+بني قديم 	pattern7
+غبي 	pattern7
+فقيع 	pattern7
+واطي 	pattern7
+شخصيه بضان 	pattern13
+تعرف 	pattern18
+صح 	pattern8
+بنت اللبوه 	pattern14
+ناصريه 	pattern14
+وسخه 	pattern7
+خلوق و 	pattern18
+كويس 	pattern7
+مدفيني .. 	pattern14
+مسليني 	pattern14
+مسليني 	pattern14
+مسليني 	pattern14
+حلوه 	pattern7
+للشعب السوري 	pattern14
+ابن اكبر واطي 	pattern14
+وبتقولي 	pattern7
+محترم 	pattern7
+وسيم 	pattern18
+مرح 	pattern7
+قصته 	pattern18
+عادي 	pattern7
+حقير جدا 	pattern7
+مقرف 	pattern7
+خطير جدا 	pattern7
+وسخه 	pattern7
+مؤلم 	pattern7
+بقي عصبي 	pattern8
+مغرور 	pattern14
+مغرور 	pattern14
+مغرور... 	pattern14
+مغرور 	pattern14
+متدين 	pattern7
+ناجح 	pattern15
+دماغها 	pattern7
 المتناكه 	pattern15
-احبها الي 	pattern15
+كريه 	pattern7
+برنس 	pattern8
+عاهه 	pattern14
+ويتحول لمهرج 	pattern15
+بتتفشخوا 	pattern18
+خبؤ 	pattern7
+جامد 	pattern8
+شخصيته جميله 	pattern18
+عسل 	pattern14
+اشطه 	pattern14
+هروها 	pattern18
+بالحقيقه 	pattern15
+هذي غيره 	pattern7
 جميل 	pattern15
-لكم احلي 	pattern15
-لاعب كبير 	pattern15
+الكبير 	pattern7
+مفيد 	pattern15
+عظيم 	pattern7
+اغبيه 	pattern7
+خدمت البلد 	pattern8
+فتوكه 	pattern7
+فتوكه 	pattern7
+اذلف 	pattern14
+متحجر 	pattern14
+جاهل 	pattern14
+خطير 	pattern7
+وليه ناقصه 	pattern13
+عميل 	pattern14
+ادائه جامد 	pattern18
+غضرين 	pattern8
+عسليه 	pattern7
+زحمه 	pattern18
+اسعار 	pattern18
+عظيم جدا 	pattern7
+تتفشخ 	pattern18
+جاهل 	pattern14
+امعه 	pattern14
+عظيم وذكي 	pattern7
+في 	pattern8
+متواضع داعم 	pattern18
+فرفوور 	pattern7
+محترم 	pattern8
+جامدين 	pattern8
+عبيط 	pattern8
+�	pattern9
+كريم 	pattern14
+غفور 	pattern14
+عسل 	pattern8
+كريم 	pattern14
+سياسي 	pattern7
+جامده 	pattern8
+متشكرين 	pattern7
+عبيط 	pattern7
+اكيد 	pattern7
+بنتش كلب 	pattern7
+بضان 	pattern7
+محترم 	pattern7
+مفتري	pattern3
+سهل 	pattern18
+وسيم 	pattern18
+الكويت ستسقط 	pattern7
+محترم 	pattern7
+بتكرم الرقاصات 	pattern15
+هتولع ربنا 	pattern8
+عليّ 	pattern14
+عزيز 	pattern14
+بفكر راقي 	pattern7
+عظيم 	pattern7
+حاجه هييييييح 	pattern8
+مركز 	pattern7
+رزل 	pattern7
+واوعي تنسو 	pattern8
+اوعو تنسو 	pattern8
+واوعو تنسو 	pattern8
 محترم 	pattern15
 رائع وذوق 	pattern15
-متميز 	pattern15
-حلوه 	pattern15
-محتشمه 	pattern15
-محجبه محتشمه 	pattern15
-خاطبه 	pattern15
-حلال 	pattern15
+سخنه 	pattern8
+ 	pattern18
+وسخ 	pattern14
+ملهاش 	pattern7
+خاشعه 	pattern18
+حيوان 	pattern14
+كلب 	pattern14
+شبه فلان 	pattern8
+محبوب 	pattern7
+بحبها 	pattern8
+بجحه	pattern3
+راقي 	pattern18
+ترّف 	pattern14
+جبار 	pattern14
+واولاد خشب 	pattern7
+حريمه 	pattern14
+عظيم جدا 	pattern7
+اخد افوره 	pattern8
+اغبيا 	pattern7
+شعب متخلف 	pattern15
 كيوت 	pattern15
-نذل 	pattern15
+الناس ثوره 	pattern7
+راجل هايف 	pattern13
+كان محترم 	pattern8
+مطمئن 	pattern15
 برنس 	pattern15
-كبيره 	pattern15
+اسمر انت حبيبي 	pattern14
+حلو 	pattern14
+خدشت حيائي 	pattern18
+عميل 	pattern14
+قذر 	pattern14
+كويسه 	pattern7
+مش لذيذ 	pattern7
+محترمه 	pattern7
 مره متناكه 	pattern15
-لاجل شهامه 	pattern15
-صاير تتغلي 	pattern15
+بيمثل قطاع 	pattern8
+قميق 	pattern7
+يعني مش 	pattern7
+محترم 	pattern7
+بحبك 	pattern8
+طيب 	pattern18
+بالفيس مستواهن 	pattern7
+اخر 	pattern7
+اخر تعيس 	pattern7
+ااخر تعيس 	pattern7
+ابن 	pattern14
+بقت لغز 	pattern8
+ناس 	pattern8
+شحات 	pattern14
+وسخه 	pattern7
+عادي 	pattern7
+متخوبق 	pattern7
+واطي 	pattern7
+الحساب 	pattern18
+زباله 	pattern14
+صايعين 	pattern14
+مورد بلطجيه 	pattern8
+سيسي 	pattern14
+واطي 	pattern14
+رائع 	pattern18
+ذوق 	pattern8
+كلام 	pattern18
 كتير 	pattern15
-انا فيك 	pattern15
+طمعانين 	pattern8
+سفاف 	pattern7
+محبوب 	pattern7
+صعيديه الجدعه	pattern3
 ناقص 	pattern15
+توفيق 	pattern18
+جميله 	pattern7
+في الخيانه 	pattern7
+قحبه 	pattern14
+بنت الزواني 	pattern14
+ابن المتناكه 	pattern14
+معرص 	pattern14
+جامد 	pattern18
+اهبل 	pattern14
+ذكي 	pattern7
+وسخه 	pattern7
 حقير 	pattern15
+وسم 	pattern7
+متخلفين 	pattern14
+جسمها جامد 	pattern8
+كويس 	pattern7
+مباريات 	pattern8
+حليم 	pattern14
+تواب 	pattern14
+محنكه 	pattern7
+محترم 	pattern7
+محترم 	pattern8
+عننا 	pattern8
+محبوب 	pattern18
+زنديق 	pattern15
+احبه 	pattern7
+بت	pattern3
+عبيط 	pattern7
+ديوس 	pattern14
+عظيم 	pattern7
+cool 	pattern7
 غريب 	pattern15
 غريب 	pattern15
-مقرف 	pattern15
-بشعرها 	pattern15
+حاجه 	pattern8
+غريب 	pattern7
+كان هيفرق 	pattern8
+غني 	pattern15
+راقي 	pattern18
 مفكر 	pattern15
-منافقه 	pattern15
-اعظم 	pattern15
-وسخه 	pattern15
-علي مرسي 	pattern15
-من دول 	pattern15
+متململ 	pattern7
+عبيط 	pattern7
+تشجيع ودعم 	pattern18
+غريب 	pattern7
+منحط 	pattern14
+محبوب 	pattern7
+اوفر 	pattern8
+مغيب 	pattern15
+مفيش ابداع 	pattern7
+شكلها جدعه 	pattern8
+علي قدر 	pattern18
+قصته مؤثره 	pattern18
+جامد 	pattern8
+محترم 	pattern8
+محترم 	pattern7
+نفيس غالي 	pattern7
+محترم 	pattern7
+مخيف 	pattern7
+ضلالي 	pattern14
+هتموت 	pattern8
+شخصي 	pattern7
+خطير جدا 	pattern7
+هروها 	pattern18
+محترم جدا 	pattern8
+بقي دموي 	pattern8
+معجبه 	pattern8
+الملك 	pattern8
+فلانه عشان 	pattern7
+امنجي 	pattern8
+ناصح 	pattern7
+شهواني 	pattern15
+اخر تعيس 	pattern7
+�	pattern9
+ابن وسخه 	pattern13
+وسخه 	pattern7
+نسخ 	pattern8
+عاقل ومحترم 	pattern7
+لاسع	pattern3
+جدعه جدا 	pattern8
+عظيم 	pattern7
+صح 	pattern7
+ايمانك 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+طموح 	pattern7
+جحلوط 	pattern14
+جاهل 	pattern14
+متخلف 	pattern14
+لزيزه 	pattern7
+جامده 	pattern7
+اداؤه عجبني 	pattern8
+تكفيخي 	pattern7
+عبيط 	pattern8
+بتوع السيسي المعرص 	pattern14
+هقدر يارب 	pattern8
+وسخه 	pattern7
+بنت وسخه 	pattern8
+عبيط 	pattern8
+غريبه	pattern3
+بيبقي ارقي 	pattern8
+عايزه واحد 	pattern8
+مغرور 	pattern14
+كنت بضحك 	pattern18
+جاهل 	pattern8
+شايف نفسه 	pattern7
+برجوازي متسلق 	pattern13
+كان محترم 	pattern8
+مكافح صبور 	pattern7
+محترم 	pattern7
+محترم بحترمك 	pattern7
+مشكوك فيه	pattern3
+جدعان 	pattern8
+بجح 	pattern7
+قويه 	pattern7
+مستفز 	pattern7
+احتلت 	pattern8
+عبيطه 	pattern8
+حشري 	pattern13
+متدين 	pattern7
+سخنه 	pattern8
+زياط 	pattern15
+يفرقش عنهم 	pattern8
+غير رجل 	pattern8
+الشعب بيحب 	pattern8
+قرافه 	pattern8
+عنصري 	pattern15
+ابن الوسخه 	pattern14
+معرص 	pattern14
+ابن الكلب 	pattern14
+ابن الحيوان 	pattern14
+نعجه 	pattern14
+طيب 	pattern8
+وطيين 	pattern14
+جامد 	pattern14
+مسليني 	pattern14
+مغرور 	pattern14
+ابن الخروفه 	pattern14
+رب 	pattern14
+قوي 	pattern14
+تخشو المطبخ 	pattern14
+ام كس مدود 	pattern14
+فضله 	pattern18
+متناك 	pattern14
+فلول 	pattern14
+فلول 	pattern14
+كسمك 	pattern14
+مجتمع 	pattern14
+بلد 	pattern14
+وسخة 	pattern14
+وسخه 	pattern7
+ملك ياسلام 	pattern14
+لباس 	pattern14
+كريم 	pattern14
+بتضرب 	pattern8
+كريم 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+كريم 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+محترم 	pattern7
+مغرور 	pattern14
+دين 	pattern15
+ملخبط	pattern3
+قيوم 	pattern14
+جبار 	pattern14
+رحمن 	pattern14
+كبري قصر النيل 	pattern14
+رغاي 	pattern7
+نرجس 	pattern14
+مسكين 	pattern14
+فلقتين 	pattern13
+عيل نكسجي حمار 	pattern13
+عيل حافي وجعان 	pattern13
+حاد 	pattern7
+عسل 	pattern14
+اموره متقوليش 	pattern14
+حبيبتي متقوليش 	pattern14
+حبيبتي انجري 	pattern14
+كلب 	pattern7
+ولاد كلب 	pattern8
+مفاجات اجمل 	pattern15
+زانيه 	pattern14
+زباله 	pattern7
+سهل 	pattern18
+محترم 	pattern7
+عسل 	pattern14
+عسل 	pattern14
+عشقي 	pattern18
+مميز 	pattern18
+بنت وسخه 	pattern13
+متناك 	pattern14
+خول 	pattern14
+امنجي 	pattern14
+راقي 	pattern18
 مفكر 	pattern15
-مزة 	pattern15
-آنكك ناجح 	pattern15
-آنكك ناجح 	pattern15
-كلب 	pattern15
-دي هتموت 	pattern15
+مميز 	pattern18
+جميل 	pattern7
+رائع 	pattern18
+طموح 	pattern7
+راعبكم 	pattern8
+متربي 	pattern14
+صوص 	pattern14
+محترم 	pattern7
+جاهل 	pattern14
+مريضه 	pattern7
+عسل 	pattern14
+قمر 	pattern14
+متناك 	pattern14
+طيبة جداا 	pattern7
+جميل 	pattern18
+امنجي 	pattern14
+متدين 	pattern7
+الفرق 	pattern18
+ايممممانك 	pattern7
+مسليني ،، 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+مغرور 	pattern14
+بضان 	pattern14
+نجم 	pattern7
+معرص 	pattern14
+ضحكته جامده 	pattern8
+مميز 	pattern18
+غلابة 	pattern8
+بضان 	pattern8
+جحلوط 	pattern14
+هتموت 	pattern17
+ممكن 	pattern7
+كريم 	pattern14
+غفور 	pattern14
+بيكسب 	pattern18
+طموح 	pattern7
+مميز 	pattern18
+مميز 	pattern18
+مسليني 	pattern14
+بنت وسخه 	pattern13
+عمتي مريضه 	pattern7
+أعمى القلب والنظر 	pattern13
+كريم 	pattern14
+غفور 	pattern14
 طيب 	pattern15
+اهبل 	pattern7
+وسخه 	pattern7
+جدعه و 	pattern7
+وراه سر 	pattern8
+نعيمي 	pattern14
+رب 	pattern14
+رب 	pattern14
+رب 	pattern14
+متربيه 	pattern7
+جامد 	pattern8
+الفرق 	pattern18
+شيوعي 	pattern14
+جبان 	pattern14
+عبد الروس 	pattern14
+جامدين 	pattern8
+جامدين 	pattern8
+برجوازي 	pattern14
+كلب تروتسكي 	pattern14
+مش صحي. 	pattern7
+ومزاج تاني 	pattern7
+منحرف 	pattern14
+وسخ 	pattern14
 غريب 	pattern15
+تاعب نفسه 	pattern8
+دماغه عالية 	pattern8
+قدير 	pattern14
+قادر 	pattern14
+عبد الدولارات 	pattern14
+سرسجي 	pattern14
+بن اﻷحبة 	pattern14
+رائع 	pattern7
+حماسك,,عادي 	pattern18
+حليم 	pattern14
+تواب 	pattern14
 محبوب 	pattern15
-xD 	pattern15
-على خواتك 	pattern15
-ناس طيبين 	pattern15
+بن المتناكه 	pattern14
+قطرائيلي 	pattern14
+بيسامحك 	pattern8
+تكفيري 	pattern14
+قاتل 	pattern14
+عقدت ناس 	pattern8
+تاني 	pattern7
+مبدع 	pattern18
+رائع 	pattern7
+رب 	pattern14
+غفور 	pattern14
+ودود 	pattern14
+غلابه 	pattern8
+راقي 	pattern18
+منطقي 	pattern7
+بنت الوسخه 	pattern14
+شرومطه 	pattern14
+شيعي 	pattern14
+محترف 	pattern14
+فنان 	pattern14
+مميز 	pattern14
+وراه سر 	pattern8
+انا زعلان 	pattern18
+فاضل بعيد 	pattern7
+غريب 	pattern18
+بيعجبنى 	pattern8
+معقول 	pattern18
+ارهابي اتفوووه عليكم 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+مثقف 	pattern18
+دكتور قلب 	pattern7
+مسليني.. 	pattern14
+مثقف 	pattern7
+فقيع 	pattern7
 مريض 	pattern15
+وسخه بضان 	pattern7
+عبيط 	pattern8
+حيوان ياكلب 	pattern14
+غبي 	pattern14
+جذمة 	pattern14
+قذر 	pattern7
+صوص 	pattern14
+كلب 	pattern7
+رغاي 	pattern8
+عبيط 	pattern8
+محترم 	pattern8
+محترم جدا 	pattern7
+خطير 	pattern7
+زلزال 	pattern14
+خيال 	pattern14
+لبيه 	pattern14
+الله 	pattern14
+كريم 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+غفور 	pattern14
+ودود 	pattern14
+قدوس 	pattern14
+جامد 	pattern8
+كلب 	pattern14
+غبي 	pattern14
+خروف 	pattern14
+لطيف 	pattern7
+مستفز 	pattern7
 مميز 	pattern15
-مبتقولش "فشخ 	pattern15
+مدفيني .. 	pattern14
+مسليني 	pattern14
+عبيط ......عبيط 	pattern8
+محترم جدا 	pattern8
+تاني 	pattern7
 خول 	pattern15
+متدين 	pattern7
+بشري محترم 	pattern7
+أعمى القلب والنظر 	pattern13
 رائع 	pattern15
 رائع 	pattern15
-مزة 	pattern15
+بضان 	pattern7
+راعبكم 	pattern8
+غريب 	pattern18
+ساقط 	pattern14
+حاجات 	pattern18
+همة عاليه 	pattern18
+ممله 	pattern7
+بنت وسخه 	pattern13
+تاعب نفسه 	pattern8
+مميز 	pattern18
+مميز 	pattern18
+مقرفه	pattern3
+محترم 	pattern8
 وسخة 	pattern15
+حليم 	pattern14
+تواب 	pattern14
+محترم وجاد 	pattern8
+ناجح 	pattern15
+عبيطه 	pattern7
+بيسامحك 	pattern8
+نضيف 	pattern8
 محبوب 	pattern15
-كلب 	pattern15
+أسطورة 	pattern14
+بتموت عادي 	pattern8
+عيلتة 	pattern8
+خطير جدا 	pattern18
+جحلوط 	pattern14
+مميز 	pattern18
+جميل 	pattern18
+جميل, 	pattern14
+جميل, 	pattern14
+محترم 	pattern7
+جامد 	pattern8
+محترم 	pattern8
+عسل 	pattern7
+حمار 	pattern14
+غبي 	pattern14
+يا 	pattern14
+اعلام 	pattern14
+حكومه 	pattern14
+بضان 	pattern14
+بضان 	pattern14
+ابيض 	pattern14
+نعيمي 	pattern14
+رب 	pattern14
+رب 	pattern14
+رب 	pattern14
+كريم 	pattern14
+كريم 	pattern14
+غفور 	pattern14
+جامده 	pattern7
+لما اذاكر 	pattern18
+زعيم و 	pattern18
+قدير 	pattern14
+قادر 	pattern14
