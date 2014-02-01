@@ -138,7 +138,6 @@ for line in tweets:
 del tweets
 
 
-
 if args.uniqandfilter:
 	
 	uniq_out_file = open("uniq_filter"+args.output, 'w')
@@ -165,7 +164,7 @@ if args.uniqandfilter:
 		execludeWords =  set(list(Options["intensifier"])+list(Options["take_another_word"]))
 		execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،","(",")",",",";","*","~","/","\\"]
 		#execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"])+list(seedLexicon))
-		execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"]))
+		execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"]))
 
 		#remove elongation more than two occurrences:
 		# rgxPart = "(?:"+"|".join(Options["longation"])+")"
