@@ -161,10 +161,10 @@ if args.uniqandfilter:
 	for i,lexword in enumerate(extractedLex):
 			
 		# print lexword
-		execludeWords =  set(list(Options["intensifier"])+list(Options["take_another_word"]))
+		execludeWords =  set(list(Options["intensifier_extend"])+list(Options["take_another_word_extend"]))
 		execludeAnywhere = ["ـ","؟",".","!","-","_","@","#","%","^","&",":","?","،","(",")",",",";","*","~","/","\\"]
 		#execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["person_pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"])+list(seedLexicon))
-		execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier"])+list(Options["pointer"])+list(Options["take_another_word"])+list(Options["stopword"])+list(Options["negators"]))
+		execludeAll =  set(list(Options["female_entity"])+list(Options["entity"])+list(Options["male_entity"])+list(Options["negators"])+list(Options["intensifier_extend"])+list(Options["pointer"])+list(Options["take_another_word_extend"])+list(Options["stopword"])+list(Options["negators"]))
 
 		#remove elongation more than two occurrences:
 		# rgxPart = "(?:"+"|".join(Options["longation"])+")"
