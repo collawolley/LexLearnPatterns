@@ -127,7 +127,7 @@ taggedTweets = ""
 #annotating Tweets File:
 ########################
 if args.tag:
-    tag_file = open("tagged_"+args.input, 'w+')
+    tag_file = out_file
     print "started Tagging Tweets...."
     tweets = in_file.read().split("\n")
     
@@ -245,44 +245,48 @@ if args.pmi :
 #done counting now calculating Pmi      
 
     for w , p in pmi_count.items():
-        #p(w)
-        pw = float(wordCount[w])/allTweets        
-
-        if (p[0] != 0):        
-            #calculating pos pmi
+        if w in posLexicon or w in negLexicon:
+            out_file.write(w + "\t"+ "N/A" + "\t"+ "N/A" + "\t"+ "N/A" + "\t" + "N/A" +"\t"+ "N/A" +"\t"+ "SeedLexicon" +"\t" + words[w] + "\n")
             
-            #p(w,pos)
-            pXpos = float(p[0])/allTweets
-            #P(pos)
-            pPos = float(poscount)/allTweets    
-            #Pmi pos
+        else :        
+            #p(w)
+            pw = float(wordCount[w])/allTweets        
 
-            pmi_pos = math.log((float(pXpos)/(pPos*pw)),2)
-                    
-            #normalize Pmi pos
+            if (p[0] != 0):        
+                #calculating pos pmi
+                
+                #p(w,pos)
+                pXpos = float(p[0])/allTweets
+                #P(pos)
+                pPos = float(poscount)/allTweets    
+                #Pmi pos
 
-            den_pos = -1 * math.log(pXpos,2)
-            norm_pmi_pos = float(pmi_pos)/(den_pos)
+                pmi_pos = math.log((float(pXpos)/(pPos*pw)),2)
+                        
+                #normalize Pmi pos
 
-        else :
-            norm_pmi_pos = 0
+                den_pos = -1 * math.log(pXpos,2)
+                norm_pmi_pos = float(pmi_pos)/(den_pos)
 
-        if(p[1] !=0):
-            #p(w,neg)
-            pXneg = float(p[1])/allTweets                        
-            #P(neg)
-            pNeg = float(negcount)/allTweets
-            #pmi Neg
-            pmi_neg = math.log((float(pXneg)/(pNeg*pw)),2)
-            #normalize Pmi Neg
-            den_neg = -1 * math.log(pXneg,2)
-            norm_pmi_neg = (float(pmi_neg))/(den_neg)
-    
-        else:
-            norm_pmi_neg = 0
+            else :
+                norm_pmi_pos = 0
 
-        print str(wordCount[w]) +"\t" + str(p[0]+p[1]+p[2])
-        out_file.write(w + "\t"+ str(p[0])+ "\t"+ str(p[1]) + "\t"+ str(p[2]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") +"\t" + words[w] + "\n")
+            if(p[1] !=0):
+                #p(w,neg)
+                pXneg = float(p[1])/allTweets                        
+                #P(neg)
+                pNeg = float(negcount)/allTweets
+                #pmi Neg
+                pmi_neg = math.log((float(pXneg)/(pNeg*pw)),2)
+                #normalize Pmi Neg
+                den_neg = -1 * math.log(pXneg,2)
+                norm_pmi_neg = (float(pmi_neg))/(den_neg)
+        
+            else:
+                norm_pmi_neg = 0
+
+            print str(wordCount[w]) +"\t" + str(p[0]+p[1]+p[2])
+            out_file.write(w + "\t"+ str(p[0])+ "\t"+ str(p[1]) + "\t"+ str(p[2]) + "\t" +str(norm_pmi_pos) +"\t"+ str(norm_pmi_neg) +"\t"+ ("POS" if norm_pmi_pos > norm_pmi_neg else "NEG") +"\t" + words[w] + "\n")
 
 in_file.close()
 out_file.close()
