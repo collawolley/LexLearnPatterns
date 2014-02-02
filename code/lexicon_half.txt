@@ -1,17 +1,16 @@
 اباحه	negative
 أغبيه	negative
-أقرع	negative
+أقرع ونزهى	negative
 إجهاض	negative
 اباحي	negative
 اباد	negative
 ابالسه	negative
 ابتزاز	negative
 ابشع	negative
-ابقى	negative
-ابله	negative
-ابن	negative
-ابن	negative
-ابو	negative
+ابقى قابلنى	negative
+ابن المره	negative
+ابن الهرمه	negative
+ابو جهل	negative
 ابوجهل	negative
 ابيح	negative
 اتبهدلت	negative
@@ -20,7 +19,6 @@
 اتحبست	negative
 اتخانق	negative
 اتخدعت	negative
-اتخمد	negative
 اتخنقت	negative
 اتدبحت	negative
 اتذل	negative
@@ -50,9 +48,9 @@
 اتكسرت	negative
 اتلم	negative
 اتلهي	negative
-اتمسح	negative
-اتمسح	negative
-اتمسح	negative
+اتمسح بيه الارض	negative
+اتمسح بيه البلاط	negative
+اتمسح بيهم الارض	negative
 اتنيل	negative
 اتهانت	negative
 اتهبلت	negative
@@ -63,7 +61,7 @@
 اجبار	negative
 اجبن	negative
 اجرام	negative
-اجعلهم	negative
+اجعلهم عبره	negative
 اجلد	negative
 اجهاض	negative
 اجهل	negative
@@ -93,7 +91,7 @@
 اخسئ	negative
 اخسر	negative
 اخص	negative
-اخص	negative
+اخص علي	negative
 اخطا	negative
 اخطاء	negative
 اخطاؤ	negative
@@ -143,7 +141,7 @@
 اسقاط	negative
 اسقط	negative
 اسكت	negative
-اسمع	negative
+اسمع كلامك اصدقك	negative
 اسيادك	negative
 اشتباك	negative
 اشتغال	negative
@@ -153,7 +151,7 @@
 اشقاء	negative
 اشكالكو	negative
 اشمئزاز	negative
-اصحاب	negative
+اصحاب المصالح	negative
 اصطناع	negative
 اصعب	negative
 اصمت	negative
@@ -233,7 +231,7 @@
 الشهداء	negative
 الصراع	negative
 الطاغيه	negative
-الطين	negative
+الطين بله	negative
 العاهرات	negative
 العك	negative
 العنف	negative
@@ -247,13 +245,13 @@
 الفاسدين	negative
 الفران	negative
 الفوضي	negative
-الله	negative
-الله	negative
-الله	negative
-اللهم	negative
-اللي	negative
+الله يحرقك	negative
+الله يحرقكو	negative
+الله يلعن	negative
+اللهم اخزه	negative
+اللي اختاشو ماتو	negative
 المؤامرات	negative
-المتاجره	negative
+المتاجره بالدين	negative
 المتظاهرون	negative
 المحبوس	negative
 المخلوع	negative
@@ -267,9 +265,9 @@
 النصيبه	negative
 النقض	negative
 الوحش	negative
-الي	negative
-الي	negative
-ام	negative
+الي الجحيم	negative
+الي زوال	negative
+ام العجايب	negative
 امثل	negative
 امكو	negative
 اموت	negative
@@ -309,9 +307,9 @@
 اهاجم	negative
 اهانه	negative
 اهانو	negative
-اهبل	negative
+اهبل بريالة	negative
 اهدار	negative
-اهدار	negative
+اهدار كرامه	negative
 اهطل	negative
 اهمال	negative
 اوباش	negative
@@ -321,7 +319,7 @@
 اونطجي	negative
 اونطه	negative
 اياكم	negative
-ايام	negative
+ايام سوده	negative
 ايذائه	negative
 ايهانه	negative
 بائد	negative
@@ -333,16 +331,16 @@
 باعو	negative
 بالتظاهر	negative
 بالعافيه 	negative
-بالعند	negative
-بالعند	negative
+بالعند فيك	negative
+بالعند فيكم	negative
 بالهروب	negative
 بانكار	negative
 باهزر	negative
 بايخ	negative
 بايظ	negative
-بتاخد	negative
-بتاع	negative
-بتاع	negative
+بتاخد فيها	negative
+بتاع مصلحته	negative
+بتاع مصلحه	negative
 بتاكلك	negative
 بتبجح	negative
 بتبلطج	negative
@@ -375,7 +373,7 @@
 بتضايقك	negative
 بتضيع	negative
 بتكدب	negative
-بتلحس	negative
+بتلحس جزم	negative
 بتموت	negative
 بتنجس	negative
 بتهاجم	negative
@@ -384,10 +382,10 @@
 بتهزر	negative
 بتهيج	negative
 بتوجع	negative
-بتوع	negative
-بتوع	negative
-بتوع	negative
-بتوع	negative
+بتوع مصالح	negative
+بتوع مصلحتكم	negative
+بتوع مصلحتهم	negative
+بتوع مصلحه	negative
 بتولع	negative
 بجاحتك	negative
 بجاحه	negative
@@ -432,7 +430,7 @@
 بلطجي	negative
 بلطجيه	negative
 بلهاء	negative
-بن	negative
+بن المره	negative
 بنتسحل	negative
 بنحرق	negative
 بنخاف	negative
@@ -488,7 +486,7 @@
 بيكابر	negative
 بيكدب	negative
 بيكذب	negative
-بيلحس	negative
+بيلحس جزم	negative
 بيموتو	negative
 بيموتوا	negative
 بيناضل	negative
@@ -540,7 +538,7 @@
 تتهد	negative
 تتهم	negative
 تتواطا	negative
-تجار	negative
+تجار دين	negative
 تجرو	negative
 تجريح	negative
 تجريم	negative
@@ -651,7 +649,7 @@
 تصرخ	negative
 تصفيه	negative
 تصمت	negative
-تضحك	negative
+تضحك علينا	negative
 تضر	negative
 تضرب	negative
 تضربك	negative
@@ -659,7 +657,7 @@
 تضعف	negative
 تضللو	negative
 تضليل	negative
-تطلع	negative
+تطلع عين	negative
 تطهر	negative
 تظاهر	negative
 تظلم	negative
@@ -733,7 +731,7 @@
 تقتلو	negative
 تقصر	negative
 تقضي	negative
-تقل	negative
+تقل دم	negative
 تكتم	negative
 تكحمك	negative
 تكذبوا	negative
@@ -820,8 +818,8 @@
 جلاد	negative
 جلطه	negative
 جموس	negative
-جن	negative
-جن	negative
+جن جنونه	negative
+جن جنونها	negative
 جنايه	negative
 جنس	negative
 جهال	negative
@@ -830,10 +828,10 @@
 جهيل	negative
 جواسيس	negative
 جيوش	negative
-حاجة	negative
+حاجة تكسف	negative
 حارب	negative
 حاصر	negative
-حافظ	negative
+حافظ مش فاهم	negative
 حانتحر	negative
 حبس	negative
 حبسجي	negative
@@ -849,16 +847,16 @@
 حريق	negative
 حزن	negative
 حزين	negative
-حسبنا	negative
-حسبى	negative
-حسبي	negative
+حسبنا الله ونعم الوكيل	negative
+حسبى الله ونعم الوكيل	negative
+حسبي الله ونعم الوكيل	negative
 حسد	negative
 حسره	negative
 حسس	negative
 حشر	negative
 حطم	negative
 حظر	negative
-حق	negative
+حق غير شرعي	negative
 حقاره	negative
 حقبه	negative
 حقد	negative
@@ -933,7 +931,7 @@
 خيسه	negative
 دابه	negative
 داعر	negative
-داهيه	negative
+داهيه تاخدك	negative
 دبح	negative
 دبحتن	negative
 دجال	negative
@@ -944,20 +942,20 @@
 دكتاتور	negative
 دلدول	negative
 دم	negative
-دم	negative
+دم تقيل	negative
 دماء	negative
 دمار	negative
 دمر	negative
 دمع	negative
 دمكم	negative
-دمه	negative
-دمها	negative
-دمهم	negative
+دمه تقيل	negative
+دمها تقيل	negative
+دمهم تقيل	negative
 دموع	negative
 دموي	negative
 دني	negative
 دنيء	negative
-ده	negative
+ده آخره	negative
 دهاء	negative
 دهاك	negative
 دهس	negative
@@ -971,16 +969,16 @@
 ذعر	negative
 ذل	negative
 ذليل	negative
-راجل	negative
+راجل ناقص	negative
 رافص	negative
 راكبك	negative
 ربايه	negative
-ربنا	negative
-ربنا	negative
-ربنا	negative
-ربنا	negative
-ربنا	negative
-ربنا	negative
+ربنا ياخدك	negative
+ربنا يخد	negative
+ربنا يخدك	negative
+ربنا يخدكم	negative
+ربنا يخده	negative
+ربنا يهده	negative
 رجم	negative
 رحل	negative
 رخيص	negative
@@ -998,7 +996,7 @@
 ركع	negative
 رما	negative
 رمم	negative
-رنوه	negative
+رنوه علقه	negative
 رهينه	negative
 روحمك	negative
 رويبض	negative
@@ -1081,7 +1079,7 @@
 سلبيات	negative
 سلبيتهم	negative
 سليط	negative
-سليط	negative
+سليط اللسان	negative
 سم	negative
 سمم	negative
 سمومك	negative
@@ -1155,9 +1153,9 @@
 ضاعت	negative
 ضال	negative
 ضحاله	negative
-ضحك	negative
-ضحك	negative
-ضحك	negative
+ضحك عليا	negative
+ضحك عليك	negative
+ضحك علينا	negative
 ضحل	negative
 ضد	negative
 ضده	negative
@@ -1194,11 +1192,11 @@
 طغيان	negative
 طفح	negative
 طفش	negative
-طلع	negative
+طلع عين	negative
 طلق	negative
 طماع	negative
 طمع	negative
-طويل	negative
+طويل اللسان	negative
 طيز	negative
 طيزك	negative
 طيزه	negative
@@ -1240,8 +1238,8 @@
 عك	negative
 عكش	negative
 علقه	negative
-علي	negative
-علي	negative
+علي جثتنا	negative
+علي جثتي	negative
 عمي	negative
 عناء	negative
 عناد	negative
@@ -1254,7 +1252,7 @@
 عهر	negative
 عور	negative
 عوض	negative
-عوضنا	negative
+عوضنا على الله	negative
 عيطت	negative
 غار	negative
 غافل	negative
@@ -1294,7 +1292,7 @@
 فاشل	negative
 فاشي	negative
 فاشيه	negative
-فاكر	negative
+فاكر نفسه ايه	negative
 فتن	negative
 فتوه	negative
 فجر	negative
@@ -1354,12 +1352,12 @@
 قصاص	negative
 قطعتو	negative
 قفانا	negative
-قلب	negative
-قلة	negative
-قلة	negative
-قله	negative
-قليل	negative
-قليله	negative
+قلب اتحرق	negative
+قلة ادب	negative
+قلة ادبك	negative
+قله ادب	negative
+قليل الادب	negative
+قليله الادب	negative
 قمع	negative
 قمعك	negative
 قنبله	negative
@@ -1368,7 +1366,7 @@
 قيد	negative
 كئابه	negative
 كئيب	negative
-كابس	negative
+كابس علي نفسنا	negative
 كاتم	negative
 كادح	negative
 كاذب	negative
@@ -1398,7 +1396,7 @@
 كرهو 	negative
 كرهوا	negative
 كس	negative
-كس	negative
+كس امك	negative
 كستك	negative
 كسر	negative
 كسف	negative
@@ -1423,14 +1421,14 @@
 كوسه	negative
 كيد	negative
 لئيم	negative
-لا	negative
+لا حياة لمن تنادى	negative
 لابس	negative
 لاذع	negative
 لامثالك	negative
 لايهمل	negative
-لبس	negative
+لبس في الحيطة	negative
 لبستو	negative
-لبسنا	negative
+لبسنا في الحيطه	negative
 لبوه	negative
 لحس	negative
 لص	negative
@@ -1438,7 +1436,7 @@
 لطم	negative
 لعان	negative
 لعن	negative
-لعنه	negative
+لعنه الله علي	negative
 لغط	negative
 لغو	negative
 لغي	negative
@@ -1448,7 +1446,7 @@
 لوث	negative
 لوح	negative
 لوطيا	negative
-ليهم	negative
+ليهم عين	negative
 مؤامر	negative
 مؤامره	negative
 مؤخر	negative
@@ -1462,7 +1460,7 @@
 ماساه	negative
 ماسخ	negative
 ماسوني	negative
-مافيش	negative
+مافيش فايده	negative
 متاسلم	negative
 متامر	negative
 متبلطج	negative
@@ -1534,7 +1532,7 @@
 مخلوع	negative
 مخمور	negative
 مخنوق	negative
-مخيب	negative
+مخيب للامال	negative
 مدايق	negative
 مدمر	negative
 مدمن	negative
@@ -1548,7 +1546,7 @@
 مرعوب	negative
 مرفوض	negative
 مرمط	negative
-مزبله	negative
+مزبله التاريخ	negative
 مزعج	negative
 مزعلني	negative
 مزور	negative
@@ -1572,13 +1570,13 @@
 مسمم	negative
 مسموم	negative
 مسيء	negative
-مش	negative
-مش	negative
-مش	negative
-مش	negative
-مش	negative
-مش	negative
-مش	negative
+مش طايق نفسه	negative
+مش طايق نفسي	negative
+مش عيب عليك	negative
+مش عيب عليكم	negative
+مش كفايه	negative
+مش ناقصاك	negative
+مش ناقصه	negative
 مشاجره	negative
 مشاكس	negative
 مشانق	negative
@@ -1616,13 +1614,13 @@
 معفن	negative
 معلش	negative
 معناة	negative
-معندكش	negative
-معندكيش	negative
-معندهاش	negative
-معندهمش	negative
-معندهوش	negative
-معندهومش	negative
-معندوش	negative
+معندكش دم	negative
+معندكيش دم	negative
+معندهاش دم	negative
+معندهمش دم	negative
+معندهوش دم	negative
+معندهومش دم	negative
+معندوش دم	negative
 معوق	negative
 معيب	negative
 مغتصب	negative
@@ -1639,7 +1637,7 @@
 مفسد	negative
 مفشوخ	negative
 مفضوح	negative
-مفيش	negative
+مفيش فايده	negative
 مقاوم	negative
 مقتك	negative
 مقتل	negative
@@ -1673,13 +1671,13 @@
 منخليش	negative
 مندس	negative
 منع	negative
-منك	negative
+منك لله	negative
 منكر	negative
-منكم	negative
-منه	negative
-منها	negative
+منكم لله	negative
+منه لله	negative
+منها لله	negative
 منهار	negative
-منهم	negative
+منهم لله	negative
 منهوب	negative
 منيل	negative
 منيوك	negative
@@ -1695,7 +1693,7 @@
 مهمش	negative
 مهين	negative
 موت	negative
-موتوا	negative
+موتوا بغيظكم	negative
 موسخ	negative
 موكوس	negative
 مومس	negative
@@ -1900,9 +1898,9 @@
 ننهش	negative
 ننيكك	negative
 نهاجم	negative
-نهار	negative
-نهارك	negative
-نهاركم	negative
+نهار اسود	negative
+نهارك مش فايت	negative
+نهاركم اسود	negative
 نهتك	negative
 نهد	negative
 نهدد	negative
@@ -1976,7 +1974,7 @@
 هنكدب	negative
 هننفخك	negative
 هنيكك	negative
-هي	negative
+هي ناقصه	negative
 هياف	negative
 هيتناك	negative
 هيج	negative
@@ -2006,26 +2004,26 @@
 وقح	negative
 وكس	negative
 وكسه	negative
-ولاد	negative
-ولاد	negative
+ولاد مره	negative
+ولاد وسخه	negative
 ولول	negative
 ومظاهرات	negative
-يا	negative
-يا	negative
-يا	negative
-يا	negative
-يا	negative
-يا	negative
-يا	negative
+يا خبر اسود	negative
+يا روح امك	negative
+يا روح اومك	negative
+يا روح خالتك	negative
+يا روح طنط	negative
+يا لهوي	negative
+يا نهار اسود	negative
 يائس	negative
 ياخدك	negative
-ياكش	negative
-ياكش	negative
+ياكش تولع	negative
+ياكش يولعوا	negative
 ياكلاب	negative
 يالهوي	negative
 يامنافقين	negative
-يانهار	negative
-يانهر	negative
+يانهار اسود	negative
+يانهر اسود	negative
 يبضن	negative
 يبطل	negative
 يبيح	negative
@@ -2102,8 +2100,8 @@
 يخدع	negative
 يخدك	negative
 يخذلكم	negative
-يخرب	negative
-يخرب	negative
+يخرب بيتك	negative
+يخرب بيوتكم	negative
 يخربيت	negative
 يخرس	negative
 يخرص	negative
@@ -2151,7 +2149,7 @@
 يسخن	negative
 يسفك	negative
 يسفل	negative
-يسقط	negative
+يسقط يسقط	negative
 يسقطو	negative
 يسيئ	negative
 يشتمو	negative
@@ -2162,8 +2160,8 @@
 يشيع	negative
 يشيل	negative
 يصتدم	negative
-يضحك	negative
-يضحكوا	negative
+يضحك علينا	negative
+يضحكوا علينا	negative
 يضر	negative
 يضربك	negative
 يضعف	negative
@@ -2221,7 +2219,7 @@
 يلم	negative
 يمسخرك	negative
 يمكر	negative
-يمهل	negative
+يمهل و لا يهمل	negative
 يموت	negative
 يناقض	negative
 ينبح	negative
@@ -2263,7 +2261,7 @@
 اؤيدك	positive
 ابتسام	positive
 ابداع	positive
-ابن	positive
+ابن حلال	positive
 اتبسط	positive
 اتشرفت	positive
 اتطوع	positive
@@ -2282,7 +2280,7 @@
 احسن	positive
 احسنت	positive
 احلي	positive
-احنا	positive
+احنا معاك	positive
 احيك	positive
 احييك	positive
 اختراع	positive
@@ -2294,8 +2292,8 @@
 استاذ	positive
 استفاد	positive
 اشجع	positive
-اشرف	positive
-اشرف	positive
+اشرف ناس	positive
+اشرف واحد	positive
 اصيل	positive
 اطيب 	positive
 اظرف	positive
@@ -2324,38 +2322,38 @@
 الجدعان	positive
 الحريه	positive
 الحمد	positive
-الحمد	positive
-الحمد	positive
+الحمد الله	positive
+الحمد لله	positive
 الحمدالله	positive
 الحياد	positive
 الخير	positive
 الذ	positive
-الذوق	positive
+الذوق الرفيع	positive
 السعيد	positive
 الشجاعه	positive
 الضحك	positive
 العداله	positive
 العفو	positive
-الف	positive
+الف شكر	positive
 القمر	positive
-الله	positive
-الله	positive
-الله	positive
-الله	positive
-الله	positive
-الله	positive
-الله	positive
-الله	positive
+الله اكبر	positive
+الله غالب	positive
+الله يحميك	positive
+الله يحميكم	positive
+الله يكون فى عون	positive
+الله يمسيك بالخير	positive
+الله يمسيه بالخير	positive
+الله ينور	positive
 المجد	positive
 المحترفين	positive
 المسانده	positive
-الى	positive
+الى الامام	positive
 امانته	positive
 امانه	positive
 امل	positive
 امن	positive
 امين	positive
-انا	positive
+انا معاك	positive
 انبسط	positive
 انبسطت	positive
 انبسطوا	positive
@@ -2370,11 +2368,11 @@
 ايجاب	positive
 ايجابي	positive
 ايمان	positive
-ايوه	positive
+ايوه كده	positive
 باحبك	positive
 باحترمك	positive
 بارع	positive
-بارك	positive
+بارك الله فيك	positive
 بالتوفيق	positive
 بالسلامه	positive
 بالهنا	positive
@@ -2385,7 +2383,7 @@
 بتزغرط	positive
 بتفهم	positive
 بتنجح	positive
-بحبك	positive
+بحبك موت	positive
 بحبكو	positive
 بحبه	positive
 بحبوا	positive
@@ -2399,7 +2397,7 @@
 بريئه	positive
 بطل	positive
 بعتذر	positive
-بكره	positive
+بكره احلى	positive
 بنحبك	positive
 بهج	positive
 بهجه	positive
@@ -2444,8 +2442,8 @@
 تسعد	positive
 تسعدك	positive
 تسعدنا	positive
-تسلم	positive
-تسلم	positive
+تسلم اديك	positive
+تسلم ايدك	positive
 تسلمي	positive
 تسهم	positive
 تسهيل	positive
@@ -2505,15 +2503,15 @@
 تواضعا	positive
 توافق	positive
 توفقك	positive
-جامد	positive
-جامدة	positive
+جامد اوي	positive
+جامدة اوي	positive
 جامل	positive
 جدع	positive
 جدعنه	positive
 جدير	positive
 جريء	positive
 جريئه	positive
-جزاك	positive
+جزاك الله خيرا	positive
 جليل	positive
 جمال	positive
 جمالك	positive
@@ -2529,9 +2527,9 @@
 حبيبت	positive
 حبيبتي	positive
 حبيبك	positive
-حبيبه	positive
+حبيبه قلبي	positive
 حبيبي	positive
-حر	positive
+حر طليق	positive
 حرر	positive
 حريه	positive
 حضن	positive
@@ -2545,7 +2543,7 @@
 حلوتك	positive
 حلوين	positive
 حمايه	positive
-حمد	positive
+حمد الله	positive
 حمدالله	positive
 حمش	positive
 حنان	positive
@@ -2560,19 +2558,19 @@
 دعابه	positive
 دعم	positive
 دكر	positive
-دمه	positive
+دمه خفيف	positive
 ذهل	positive
 رائد	positive
 راسخ	positive
 ربح	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
-ربنا	positive
+ربنا يبارك	positive
+ربنا يحميك	positive
+ربنا يزيد	positive
+ربنا يزيد ويبارك	positive
+ربنا يسعدك	positive
+ربنا يكثر من امثالك	positive
+ربنا يكرمك	positive
+ربنا يوفقك	positive
 رجوله	positive
 رحب	positive
 رحم	positive
@@ -2586,12 +2584,12 @@
 زفه	positive
 زقطط	positive
 زكي	positive
-زي	positive
+زي العسل	positive
 سالم	positive
 ساند	positive
 ستنتصر	positive
 ستهم	positive
-سرعة	positive
+سرعة بديهه	positive
 سرور	positive
 سعاد	positive
 سعاده	positive
@@ -2631,7 +2629,7 @@
 صافي	positive
 صالح	positive
 صالحه	positive
-صباح	positive
+صباح الورد	positive
 صبر	positive
 صبور	positive
 صحبه	positive
@@ -2644,7 +2642,7 @@
 صراحه	positive
 صريح	positive
 صغننه	positive
-صفحة	positive
+صفحة جديدة	positive
 صلح	positive
 ضحك	positive
 ضحكه	positive
@@ -2657,7 +2655,7 @@
 عاقل	positive
 عبقري	positive
 عثل	positive
-عداك	positive
+عداك العيب	positive
 عدلا	positive
 عذب	positive
 عروس	positive
@@ -2669,9 +2667,9 @@
 عفو	positive
 عفيف	positive
 عقل	positive
-عندك	positive
+عندك حق	positive
 عيد	positive
-عين	positive
+عين العقل	positive
 غالي	positive
 فاز	positive
 فاضل	positive
@@ -2690,9 +2688,9 @@
 فل	positive
 فلح	positive
 فهم	positive
-فوق	positive
-فى	positive
-في	positive
+فوق الشبهات	positive
+فى حفظ الله	positive
+في الصميم	positive
 قدر	positive
 قدرته	positive
 قدوه	positive
@@ -2701,8 +2699,8 @@
 قوي	positive
 قيمه	positive
 كاريزما	positive
-كتر	positive
-كتر	positive
+كتر خيرك	positive
+كتر خيرهم	positive
 كراما	positive
 كرامه	positive
 كرم	positive
@@ -2710,18 +2708,18 @@
 كفاءه	positive
 كفائه	positive
 كفل	positive
-كلنا	positive
-كلنا	positive
-كلنا	positive
+كلنا مع	positive
+كلنا معاك	positive
+كلنا معك	positive
 كوميدي	positive
 كياسه	positive
-لافض	positive
+لافض فوك	positive
 لايك	positive
 لذيذ	positive
 مؤمن	positive
 مؤيد	positive
-ما	positive
-ماشاء	positive
+ما شاء الله	positive
+ماشاء الله	positive
 مبتسم	positive
 مبتهج	positive
 مبروك	positive
@@ -2751,7 +2749,7 @@
 مخلص	positive
 مداح	positive
 مذهل	positive
-مر	positive
+مر مرور الكرام	positive
 مسامحينك	positive
 مسانده	positive
 مستتره	positive
@@ -2764,20 +2762,20 @@
 مطمئن	positive
 مطيع	positive
 مظبوط	positive
-معاك	positive
+معاك حق	positive
 معجب	positive
 معجبيك	positive
-معك	positive
+معك حق	positive
 مقبولا	positive
 ملاك	positive
 ملعلع	positive
 ممتاز	positive
 ممتازه	positive
 ممتع	positive
-من	positive
+من حسن الحظ	positive
 مناضل	positive
 منصف	positive
-منصور	positive
+منصور باذن الله	positive
 منعش	positive
 منقذ	positive
 منور	positive
@@ -2786,8 +2784,8 @@
 موده	positive
 موضوعي	positive
 موفق	positive
-موفق	positive
-موفقين	positive
+موفق بأذن الله	positive
+موفقين بأذن الله	positive
 ميزه	positive
 نؤيد	positive
 نابغ	positive
@@ -2878,7 +2876,7 @@
 همه	positive
 هنئ	positive
 هنحل	positive
-هو	positive
+هو ده الشغل	positive
 ‎هيب	positive
 واضح	positive
 واعي	positive
@@ -2898,7 +2896,7 @@
 يبتسم	positive
 يبتهج	positive
 يبدع	positive
-يبكي	positive
+يبكي من الفرح	positive
 يتحملك	positive
 يتقن	positive
 يثق	positive
@@ -2942,8 +2940,8 @@
 يسعد	positive
 يسعدك	positive
 يسعدنا	positive
-يسلم	positive
-يسلم	positive
+يسلم فمك	positive
+يسلم فومك	positive
 يسهم	positive
 يشرف	positive
 يشفيك	positive
@@ -2996,4 +2994,5 @@
 يهدي	positive
 يهديك	positive
 يهنئ	positive
+يوافق	positive
 يوفقك	positive
