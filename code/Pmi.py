@@ -12,8 +12,8 @@ import re
 import math
 
 
-#Helpers
-#-------------------------------------
+##-Helpers--
+#-----------
 
 def takeWindow(tweet,word,windowsize):
 

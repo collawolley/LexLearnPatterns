@@ -131,6 +131,7 @@ for line in tweets:
 				if capture is not None and len(capture) > 0 :				
 					c = capture.split(" ")
 					s = " ".join(c)  + "\t" + pname+"\n"
+					print s 
 					out_file.write(s)
 					extractedLex.append(" ".join(c))
 					lexWithPatterns.append((" ".join(c),pname))
