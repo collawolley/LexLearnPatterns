@@ -16,7 +16,7 @@ import itertools
 
 parser = argparse.ArgumentParser(description='tool to expand set of regex patterns to all possible twitter search queries')
 parser.add_argument('-c','--config', help='Input Config file name',required=True)
-parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= True)
+parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= False)
 args = parser.parse_args()
 
 # loading config file
@@ -53,8 +53,8 @@ for i in init :
 reserved_variables = [ "__"+k for k,v in Options.items()]
 
 Patterns = {}
-
-for name,pattern in config("searchquery").items():
+keywords = [] 
+for name,pattern in config("searchquery").items():    
 
     if any( x in pattern for x in reserved_variables):
         #patterns has variables inside  
@@ -72,7 +72,14 @@ for name,pattern in config("searchquery").items():
             new_pattern = pattern
             for i,key in enumerate(variables.keys()):
                 new_pattern = new_pattern.replace("__"+key,p[i])
-            print new_pattern
+            keywords.append(new_pattern)
 
 
-out_file = open(args.output, 'w')
+if args.output is not None:
+    out_file = open(args.output, 'w')
+    out_file.write("\n".join(keywords))
+else :
+    for i in keywords : 
+        print i 
+
+
