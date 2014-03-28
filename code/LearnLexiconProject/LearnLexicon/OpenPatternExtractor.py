@@ -39,6 +39,9 @@ filteredCandidatengrams = []
 # 	if len(res) > 1 :
 # 		print i +"\t"+ str(len(res))
 
+print len(set(candidatengrams))
+candidatengrams = list(set(candidatengrams))[1:100]
+
 res = matcher.verifyPatterns("patterns_open_verify",{"candidatewords":set(candidatengrams)})
 
 print len(res)
