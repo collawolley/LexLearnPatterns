@@ -10,7 +10,6 @@ import argparse
 from Classes.Tweet import *
 from TweetGrapper.TweetGrapper import * 
 from PatternMatcher import * 
-from nltk.util import ngrams
 
 
 parser = argparse.ArgumentParser(description='tool to extract set of Subjecitve Words and idioms depending on set of Patterns written in Config File')
@@ -40,7 +39,7 @@ filteredCandidatengrams = []
 # 	if len(res) > 1 :
 # 		print i +"\t"+ str(len(res))
 
-res = matcher.verifyPatterns("patterns_open_verify",{"candidatewords":candidatengrams})
+res = matcher.verifyPatterns("patterns_open_verify",{"candidatewords":set(candidatengrams)})
 
 print len(res)
 
