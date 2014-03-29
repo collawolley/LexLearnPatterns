@@ -40,22 +40,24 @@ filteredCandidatengrams = []
 # 		print i +"\t"+ str(len(res))
 
 print len(set(candidatengrams))
-candidatengrams = list(set(candidatengrams))[1:100]
+candidatengrams = list(set(candidatengrams))
 
-res = matcher.verifyPatterns("patterns_open_verify",{"candidatewords":set(candidatengrams)})
-
-print len(res)
-
-for i in res:
+for i in candidatengrams:
 	print i 
 
+# res = matcher.verifyPatterns("patterns_open_verify",{"candidatewords":set(candidatengrams)})
 
-# for candidate in candidatengrams:
+# print len(res)
 
-# 	grap = TweetGrapper()
-# 	l = grap.search(candidate)
-# 	if len(l) > 3:
-# 		print candidate
+# for i in res:
+# 	print i 
+
+for candidate in candidatengrams:
+	if len(candidate.split(" ") ) == 1 :
+		grap = TweetGrapper()
+		l = grap.search("\" "+candidate+" و خول \"")
+		if len(l) > 0:
+			print candidate + "\t" + str(len(l))
 
 
 
