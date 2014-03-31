@@ -128,8 +128,8 @@ class PatternMatcher:
 		extractedLex = []
 		lexWithPatterns = []
 		
-		tweets = in_file.read().split("\n")
-		for line in tweets:		
+		# tweets = in_file.read().split("\n")
+		for line in in_file:		
 	
 			for pname, p in self.Patterns[patternSectionName].items():
 				# line = autoNormalizeSentence(line)
@@ -140,7 +140,7 @@ class PatternMatcher:
 							c = capture.split(" ")														
 							candidateWords.append(Word(" ".join(c),pname))
 
-		del tweets
+		# del tweets
 
 		in_file.close()		
 		return candidateWords
