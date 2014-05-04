@@ -8,7 +8,8 @@ import regex
 
 
 class Tweet:
-	def __init__(self,text,language="ar",polarity=None,searchKeyword=None):
+	def __init__(self,id,text,language="ar",polarity=None,searchKeyword=None):
+		self.id = id 
 		self.text = text
 		self.language = language
 		self.polarity= polarity

@@ -6,7 +6,7 @@ python 2.7.3
 '''
 
 class Word:
-	def __init__(self,text,polarity=None,pattern=None):
+	def __init__(self,text,pattern=None,polarity=None,):
 		self.text = text
 		self.polarity = polarity
 		self.pattern = pattern

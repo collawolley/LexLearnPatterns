@@ -11,170 +11,51 @@ import ConfigParser
 import re
 from Classes.Tweet import *
 from Classes.Word import * 
+from Config import * 
 
 class PatternMatcher:
-	Patterns = {}
-	Options = {}
-	variables = []
 
-
-	def __init__(self,inputFile,configFile,variable=None):
+	def __init__(self,inputFile,config,variable=None):
 		self.inputFile = inputFile	
-		self.configFile = configFile		
-		self.__loadConfig(self.configFile)
+		self.config = config
 		if variable is not None :
-			addVariable(variable)
+			self.config.addVariable(variable)
  
-	def __loadConfig(self,configFile):
-		Config = ConfigParser.ConfigParser()
-		Config.read(configFile)
-		def config(section):
-		    dict1 = {}
-		    options = Config.options(section)
-		    for option in options:
-		        try:
-		            dict1[option] = Config.get(section, option)
-		            if dict1[option] == -1:
-		                DebugPrint("skip: %s" % option)
-		        except:
-		            print("exception on %s!" % option)
-		            dict1[option] = None
-		    return dict1
-
-		#loading Options  
-		init = config("variables")
-		for i in init :	
-			self.Options[i] = set([x.strip() for x in init[i].split(",")])
-
-		#loading variable names
-		self.variables = [ "__"+k for k,v in self.Options.items()]
-		
-		#loading patterns
-		patternSecNames = [p  for p in Config.sections() if "patterns" in p]		
-		for secName in patternSecNames:
-			self.Patterns[secName] = {}
-
-			for name,pattern in config(secName).items():
-				if any( v in pattern for v in self.variables):
-					#patterns has variables inside	
-					for x in [v for v in self.variables if v in pattern]:			
-						#capture parts of patterns that has variables names and remove the dunderscore
-						var = x.strip("__")
-						#build regex for variables, (?: is for non capturing group in regex)
-						rgxPart = "(?:"+"|".join(self.Options[var])+")"				
-						pattern = pattern.replace(x,rgxPart)							
-
-						self.Patterns[secName][name] = re.compile(pattern)						
-				else:
-					#if pattern doesn't have variables inside , just write it 
-					self.Patterns[secName][name] = re.compile(pattern)			
-
-
-	def __reloadConfig(self):
-		Config = ConfigParser.ConfigParser()
-		Config.read(self.configFile)
-		def config(section):
-		    dict1 = {}
-		    options = Config.options(section)
-		    for option in options:
-		        try:
-		            dict1[option] = Config.get(section, option)
-		            if dict1[option] == -1:
-		                DebugPrint("skip: %s" % option)
-		        except:
-		            print("exception on %s!" % option)
-		            dict1[option] = None
-		    return dict1
-
-
-		#loading patterns
-		patternSecNames = [p  for p in Config.sections() if "patterns" in p]		
-		for secName in patternSecNames:
-			self.Patterns[secName] = {}
-
-			for name,pattern in config(secName).items():
-				if any( v in pattern for v in self.variables):
-					#patterns has variables inside	
-					for x in [v for v in self.variables if v in pattern]:			
-						#capture parts of patterns that has variables names and remove the dunderscore
-						var = x.strip("__")
-						#build regex for variables, (?: is for non capturing group in regex)
-						rgxPart = "(?:"+"|".join(self.Options[var])+")"				
-						pattern = pattern.replace(x,rgxPart)							
-
-						self.Patterns[secName][name] = re.compile(pattern)						
-				else:
-					#if pattern doesn't have variables inside , just write it 
-					self.Patterns[secName][name] = re.compile(pattern)		
-
-
-	def addVariable (self,variable):
-		if variable is not None :
-			for k,v in variable.items():
-				self.variables.append("__"+k)
-				self.Options[k] = set(v)
-
-	def removeVariable(self,variable):
-		if variable is not None :
-			for k,v in variable.items():
-				if "__"+k in self.variables and self.Options[k] is not None:
-					self.variables.remove("__"+k)
-					del self.Options[k]		
-
 	def applyPatterns(self,patternSectionName):
 		in_file = open(self.inputFile, 'r')	
-		candidateWords = []
 
-		extractedLex = []
-		lexWithPatterns = []
-		
-		# tweets = in_file.read().split("\n")
-		for line in in_file:		
-	
-			for pname, p in self.Patterns[patternSectionName].items():
+		for line in in_file:	
+			for pname, p in self.config.Patterns[patternSectionName].items():
 				# line = autoNormalizeSentence(line)
 				res = p.search(line)		
 				if res is not None:				
 					for capture in res.groups():			
 						if capture is not None and len(capture) > 0 :				
-							c = capture.split(" ")														
-							candidateWords.append(Word(" ".join(c),pname))
-
-		# del tweets
+							c = capture.split(" ")																					
+							yield Word(" ".join(c),pname)	
 
 		in_file.close()		
-		return candidateWords
 
 
 	def verifyPatterns(self,patternSectionName,variable):
-		self.addVariable(variable)
-		self.__reloadConfig()
-
-		print self.Patterns[patternSectionName]
+		self.config.addVariable(variable)
+		self.config.reloadConfig()
 
 		in_file = open(self.inputFile, 'r')	
-		candidateWords = []
+			
+		for line in in_file:		
 
-		extractedLex = []
-		lexWithPatterns = []
-		
-		tweets = in_file.read().split("\n")
-		for line in tweets:		
-	
-			for pname, p in self.Patterns[patternSectionName].items():
+			for pname, p in self.config.Patterns[patternSectionName].items():
 				# line = autoNormalizeSentence(line)
 				res = p.search(line)		
 				if res is not None:				
 					for capture in res.groups():			
 						if capture is not None and len(capture) > 0 :				
 							c = capture.split(" ")														
-							candidateWords.append(Word(" ".join(c),pname))
-
-		del tweets
+							yield Word(" ".join(c),pname)
 
 		in_file.close()		
-		self.removeVariable(variable)
-		return candidateWords
+		self.config.removeVariable(variable)		
 
 
 # command line arguments parsing 
