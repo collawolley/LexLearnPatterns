@@ -57,7 +57,7 @@ class TweetGrapper:
   def  __init__ (self,consumer_token = "HHb0Q4EwqUFhiOT9cuZw",
   consumer_secret = "wiUpi18szMmaBeDe3Xz0W8hTm4DSSSwRKSAdE5OTv0",
   ACCESS_TOKEN = '158681231-7iclqcgq8kFkPZBiQPK0AruMSKySUlNr0FethRFf',
-  ACCESS_TOKEN_SECRET = 'VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb',streamSleep=30):
+  ACCESS_TOKEN_SECRET = 'VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb',streamSleep=1):
     self.consumer_token = consumer_token
     self.consumer_secret = consumer_secret
     self.ACCESS_TOKEN = ACCESS_TOKEN
@@ -101,10 +101,15 @@ class TweetGrapper:
 
   def streamloop(self,keywords,method,loc="egypt",lang="ar"):
     lastID = 0
-    keyword = "OR".join(keywords)
+    keyword = " OR ".join(keywords)
+    print keyword
         
     while 1 :
       tweets = self.api.search(keyword,count=1000,lang=lang,locale=loc)    
+
+      tweets = sorted(tweets, key=lambda x: x.id)
+
+
 
       for tweet in tweets:
         if tweet.id > lastID:        
