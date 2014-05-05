@@ -110,4 +110,4 @@ class TweetGrapper:
         if tweet.id > lastID:        
           method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
           lastID = tweet.id
-      time.sleep(streamSleep)
+      time.sleep(self.streamSleep)
