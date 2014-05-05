@@ -19,12 +19,6 @@ from Classes.Tweet import *
 from TweetGrapper.TweetGrapper import * 
 
 
-#location variables 
-LOCATIONS = {
-'egypt': [22.187405, 26.561508, 31.353637, 36.207504],
-'cairo': [29.965643, 31.14682, 30.157002, 31.549194]
-}
-
 #common usages:
 #1- search keywords from file in twitter and add to file 
 #2- subscribe to stream of keywords and write to file
