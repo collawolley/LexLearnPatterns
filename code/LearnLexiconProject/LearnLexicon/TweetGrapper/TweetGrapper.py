@@ -57,7 +57,7 @@ class TweetGrapper:
   def  __init__ (self,consumer_token = "HHb0Q4EwqUFhiOT9cuZw",
   consumer_secret = "wiUpi18szMmaBeDe3Xz0W8hTm4DSSSwRKSAdE5OTv0",
   ACCESS_TOKEN = '158681231-7iclqcgq8kFkPZBiQPK0AruMSKySUlNr0FethRFf',
-  ACCESS_TOKEN_SECRET = 'VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb'):
+  ACCESS_TOKEN_SECRET = 'VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb',streamSleep=30):
     self.consumer_token = consumer_token
     self.consumer_secret = consumer_secret
     self.ACCESS_TOKEN = ACCESS_TOKEN
@@ -65,6 +65,7 @@ class TweetGrapper:
     self.auth = tweepy.OAuthHandler( consumer_token,consumer_secret )
     self.auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     self.api = tweepy.API(self.auth)
+    self.streamSleep = streamSleep
 
   def search(self,keywords,method,clean=False,uniq=True,loc="egypt",lang="ar"):
     
@@ -88,7 +89,7 @@ class TweetGrapper:
     #for each 400 keywords , initialize stdoutlistener object for it (because limit of streaming api for twitter is 400)
 
     l = StdOutListener(method)
-    l.keywords = [keywords]
+    l.keywords = keywords
 
     #todo implement locations
     locs = LOCATIONS[loc]
@@ -109,4 +110,4 @@ class TweetGrapper:
         if tweet.id > lastID:        
           method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
           lastID = tweet.id
-      time.sleep(1)
+      time.sleep(streamSleep)
