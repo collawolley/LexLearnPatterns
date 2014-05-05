@@ -129,7 +129,7 @@ class TweetGrapper:
           tweets = sorted(tweets, key=lambda x: x.id)
 
           for tweet in tweets:
-            if True :#tweet.id > lastID:        
+            if tweet.id > lastID:        
               method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
               lastID = tweet.id
           time.sleep(self.streamSleep)
