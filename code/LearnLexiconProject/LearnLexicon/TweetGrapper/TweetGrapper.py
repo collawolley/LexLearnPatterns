@@ -66,9 +66,10 @@ class TweetGrapper:
     self.auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     self.api = tweepy.API(self.auth)
 
-  def search(self,keyword,clean=False,uniq=True,loc="egypt",lang="ar"):
+  def search(self,keywords,method,clean=False,uniq=True,loc="egypt",lang="ar"):
     
     tweetList = []
+    keyword = "OR".join(keywords)
 
     tweets = self.api.search(keyword,count=1000,lang=lang,locale=loc)  
 
@@ -79,12 +80,10 @@ class TweetGrapper:
         tweets.append(line)
         
     for tweet in tweets:      
-      tweetList.append(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
-
-    return tweetList
+      method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
 
 
-  def stream(self,keywords,method,loc="egypt",lang="en"):
+  def stream(self,keywords,method,loc="egypt",lang="ar"):
 
     #for each 400 keywords , initialize stdoutlistener object for it (because limit of streaming api for twitter is 400)
 
@@ -102,10 +101,10 @@ class TweetGrapper:
   def streamloop(self,keywords,method,loc="egypt",lang="ar"):
     lastID = 0
     keyword = "OR".join(keywords)
-    
+        
     while 1 :
       tweets = self.api.search(keyword,count=1000,lang=lang,locale=loc)    
-            
+
       for tweet in tweets:
         if tweet.id > lastID:        
           method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
