@@ -51,21 +51,40 @@ class StdOutListener(StreamListener):
   def on_error(self, status):
     print status
 
+#consumer_token,consumer_secret,ACCESS_TOKEN,ACCESS_TOKEN_SECRET
+KEYS = [
+["HHb0Q4EwqUFhiOT9cuZw","wiUpi18szMmaBeDe3Xz0W8hTm4DSSSwRKSAdE5OTv0",'158681231-7iclqcgq8kFkPZBiQPK0AruMSKySUlNr0FethRFf','VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb'],
+["2mTxwXl2N2PSS9q0753KClYz8","vKJw0QRaeq7ohMIQ4ubsLjwf8wDSswwaPBVyzMiUhrJwGkSU9z","158681231-bd6lLKj34S2DVEU4FonO6lb86xLC2PnDEbj4kjYK","cpKIxPci94NaSc9QF10JRM99las8Nx05UtthvHkvTK2u2"],
+["IVGTcvVHafHAieO1mQ7tkNR9C","OUtW8Ce1UC9N5ihL9GjMhwSG94eyaOURtoUkI1ksJ3MrpB9Ksw","158681231-LPztIzse604LkQmWmthnemkB3l71Bp4GsEp5ulf7","ao1eKOONDPxKp1xIdm4z42pl77kwxRfxL9AEmrHYkRQDC"]
+]
+
 
 class TweetGrapper:
   
-  def  __init__ (self,consumer_token = "HHb0Q4EwqUFhiOT9cuZw",
-  consumer_secret = "wiUpi18szMmaBeDe3Xz0W8hTm4DSSSwRKSAdE5OTv0",
-  ACCESS_TOKEN = '158681231-7iclqcgq8kFkPZBiQPK0AruMSKySUlNr0FethRFf',
-  ACCESS_TOKEN_SECRET = 'VisPcmHHE6ENNDspL48g15CloHNVmt0FRMPopCdphzpQb',streamSleep=1):
-    self.consumer_token = consumer_token
-    self.consumer_secret = consumer_secret
-    self.ACCESS_TOKEN = ACCESS_TOKEN
-    self.ACCESS_TOKEN_SECRET = ACCESS_TOKEN_SECRET
-    self.auth = tweepy.OAuthHandler( consumer_token,consumer_secret )
-    self.auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+  def  __init__ (self,streamSleep=30):
+    self.consumer_token = KEYS[0][0]
+    self.consumer_secret = KEYS[0][1]
+    self.ACCESS_TOKEN = KEYS[0][2]
+    self.ACCESS_TOKEN_SECRET = KEYS[0][3]
+    self.auth = tweepy.OAuthHandler( self.consumer_token,self.consumer_secret )
+    self.auth.set_access_token(self.ACCESS_TOKEN, self.ACCESS_TOKEN_SECRET)
     self.api = tweepy.API(self.auth)
     self.streamSleep = streamSleep
+    self.keyid = 0 
+
+
+  def shiftAuthKeys(self):
+    self.keyid +=1 
+    self.keyid = self.keyid % len(KEYS)
+    i = self.keyid
+    self.consumer_token = KEYS[i][0]
+    self.consumer_secret = KEYS[i][1]
+    self.ACCESS_TOKEN = KEYS[i][2]
+    self.ACCESS_TOKEN_SECRET = KEYS[i][3]
+    self.auth = tweepy.OAuthHandler( self.consumer_token,self.consumer_secret )
+    self.auth.set_access_token(self.ACCESS_TOKEN, self.ACCESS_TOKEN_SECRET)
+    self.api = tweepy.API(self.auth)
+
 
   def search(self,keywords,method,clean=False,uniq=True,loc="egypt",lang="ar"):
     
@@ -105,14 +124,15 @@ class TweetGrapper:
     print keyword
         
     while 1 :
-      tweets = self.api.search(keyword,count=1000,lang=lang,locale=loc)    
+      try :
+          tweets = self.api.search(keyword,count=1000,lang=lang,locale=loc)    
+          tweets = sorted(tweets, key=lambda x: x.id)
 
-      tweets = sorted(tweets, key=lambda x: x.id)
-
-
-
-      for tweet in tweets:
-        if tweet.id > lastID:        
-          method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
-          lastID = tweet.id
-      time.sleep(self.streamSleep)
+          for tweet in tweets:
+            if True :#tweet.id > lastID:        
+              method(Tweet(tweet.id,tweet.text,language=lang,searchKeyword=keyword))
+              lastID = tweet.id
+          time.sleep(self.streamSleep)
+      except tweepy.TweepError as e:
+        if str(e.message[0]['code']) == "88":
+          self.shiftAuthKeys()
