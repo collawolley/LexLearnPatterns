@@ -1,6 +1,6 @@
 #encoding:utf-8 
 '''
-Created on 24 March, 2013
+Created on 24 March, 2014
 python 2.7.3 
 @author: hadyelsahar 
 '''
@@ -41,7 +41,9 @@ class Tweet:
 		  	tweet = regex.sub(r'(.)\1{2,}',r'\1\1\1', tweet,flags=regex.UNICODE)
 		  	#Convert hashtags into words
 		  	tweet = regex.sub(r'[#_]+',' ', tweet,flags=regex.UNICODE)
-
+		  	#remove unneeded puncituation
+		  	tweet = regex.sub(r'[,\.@^%:"\']+',' ', tweet,flags=regex.UNICODE)
+		  	#remove extra spaces
 		  	tweet  = " ".join(tweet.split()).strip()
 		  	self.cleanText = tweet
 	  		return tweet

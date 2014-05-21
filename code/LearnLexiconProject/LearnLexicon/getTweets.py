@@ -46,26 +46,6 @@ if args.showkw is True and args.mode.lower() in "stream":
 
 
 ######--- Helper functions
-# cleaning tweets
-def clean(tweet) : 
-  #discarding twitter usernames
-  #tweet = regex.sub(r'@[A-Za-z0-9_]+', '', tweet,flags=regex.UNICODE)
-
-  #discarding twitter RT or RTTTT or any of it's elongations
-  tweet = regex.sub(r'R+T+\s*:*\s', ' ', tweet,flags=regex.UNICODE)
-
-  #Removing links 
-  tweet = regex.sub(r'http[s]?://[^\s<>"]+|www\.[^\s<>"]+', ' ', tweet)
-
-  #replace underscores with spaces
-  tweet = tweet.replace("_"," ")
-
-  #remove elongations
-  #tweet = regex.sub(r'(.)\1{2,}',r'\1\1\1', tweet,flags=regex.UNICODE)
-  #Convert hashtags into words
-  tweet = regex.sub(r'[#_]+',' ', tweet,flags=regex.UNICODE)
-
-  return tweet.strip()  
 
 def writeTweet(tweet):
 
@@ -97,9 +77,7 @@ with open(args.input) as f:
     kws = f.read().split("\n")    
     keywords = [kw.strip() for kw in kws if len(kw) > 0]        
 
-
 grap = TweetGrapper()
-
 
 #Search Mode
 #------------------

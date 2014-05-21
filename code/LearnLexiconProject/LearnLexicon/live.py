@@ -11,50 +11,17 @@ from Classes.Tweet import *
 from TweetGrapper.TweetGrapper import * 
 from PatternMatcher import * 
 
-
 # t = Tweet(u"اصلها \n\n لو عرفت تخليك بني ادم محترم و عارف ربنا .. اوعي تسيبها !",language="ar",searchKeyword="محترم")
 
 # print t.clean()
 # print t.clean()
 # print t.cleanText
 
-# grap = TweetGrapper()
-# l = grap.search("محترم")
-
-# for i in l :
-# 	print i.clean().encode("utf-8")
-
-
-# parser = argparse.ArgumentParser(description='tool to extract set of Subjecitve Words and idioms depending on set of Patterns written in Config File')
-# parser.add_argument('-c','--config', help='Input Config file name',required=True)
-# parser.add_argument('-i','--input', help='Input Tweets files to Extract subjective words from',required=True)
-# parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= True)
-# parser.add_argument('-uf','--uniqandfilter',help='filter extracted lexicon words and save them to clean_uniq_output file with counts', required= False , action="store_true")
-# parser.add_argument('-sl','--seedlexicon', help='Input classified lexicon file name',required=False)
-# args = parser.parse_args()
-	
-
-
 grap = TweetGrapper()
-def do(tweet):
-	print str(tweet.id ) +"\t" + tweet.simpleText()
-#grap.streamloop(["السيسي","مصر"],do)
-# grap.streamloop(["مصر","مرسي","السيسي","مبارك","الأخوان","\"30 يونيو\"","\"25 يناي\"","#انتخبوا_العرص","عسكر"],do)
-grap.streamloop(["فودافون","موبينيل"],do)
+l = grap.search("محترم")
 
-
-
-
-
-# config = Config(args.config)
-# matcher = PatternMatcher(args.input,config)
-
-# print config.Patterns
-
-# candidateWords = matcher.applyPatterns("patterns_closed")
-
-# for i in candidateWords:
-# 	print i.text + "\t" + i.pattern
+for i in l :
+	print str(i.id) +"\t"+ i.clean().encode("utf-8")
 
 
 
@@ -67,6 +34,7 @@ grap.streamloop(["فودافون","موبينيل"],do)
 # parser.add_argument('-sl','--seedlexicon', help='Input classified lexicon file name',required=False)
 # args = parser.parse_args()
 	
+
 # if args.uniqandfilter is True and args.seedlexicon is None:
 #   parser.error('must specify seedlexicon when choosing [-uf] option')
 

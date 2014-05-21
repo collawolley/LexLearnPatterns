@@ -15,7 +15,7 @@ from Config import *
 
 class PatternMatcher:
 
-	def __init__(self,inputFile,config,variable=None):
+	def __init__(self,config,inputFile=None,variable=None):
 		self.inputFile = inputFile	
 		self.config = config
 		if variable is not None :
@@ -35,6 +35,15 @@ class PatternMatcher:
 							yield Word(" ".join(c),pname)	
 
 		in_file.close()		
+
+	def applyPatternsOnTweet(self,tweet,patternSectionName):
+		for pname, p in self.config.Patterns[patternSectionName].items():			
+			res = p.search(tweet)		
+			if res is not None:				
+				for capture in res.groups():			
+					if capture is not None and len(capture) > 0 :				
+						c = capture.split(" ")																					
+						yield Word(" ".join(c),pname)	
 
 
 	def verifyPatterns(self,patternSectionName,variable):
