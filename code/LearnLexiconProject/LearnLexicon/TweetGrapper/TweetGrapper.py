@@ -122,7 +122,7 @@ class TweetGrapper:
       if e.message[0]['code'] == 88:  
         print "changedkeys"
         self.shiftAuthKeys()
-        return []
+      return []
 
 
   def stream(self,keywords,method,loc="egypt",lang="ar"):
