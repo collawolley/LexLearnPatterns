@@ -85,7 +85,7 @@ while True:
 						w2 = r[pos+len(searchString):] 
 
 					w2 = w2.strip()
-					if len(w2) > 0 and w2.encode("utf-8") not in GoodKeywords and w2.encode("utf-8") not in newGoodKeywords and isReserved(w2.encode("utf-8")) is not True :
+					if len(w2) > 1 and w2.encode("utf-8") not in GoodKeywords and w2.encode("utf-8") not in newGoodKeywords and isReserved(w2.encode("utf-8")) is not True :
 						searchString2 = "\""+ w2.encode("utf-8") + " و " + w +"\""			
 						r2 = grap.search([searchString2],None)
 						if len(r2) > 5 :
