@@ -15,6 +15,7 @@ class Tweet:
 		self.polarity= polarity
 		self.searchKeyword = searchKeyword
 		self.cleanText = None
+		self.normText = None
 
 
 	def __str__(self):
@@ -24,10 +25,15 @@ class Tweet:
 		return regex.sub(r'[\t\n\s]+',' ',self.text)
 
 
-	def clean(self):
-		if self.cleanText is not None:
-			return self.cleanText
-		else :			
+	#send True if wanted to Normalize otherwise wont normalize
+	def clean(self,NORM = False ):
+		
+		if self.cleanText is not None :
+			if NORM:
+				return self.normalize(self.cleanText)
+			else :
+				return self.cleanText
+		else :						
 			tweet = self.text
 			#remove usernames
 		  	tweet = regex.sub(r'@[A-Za-z0-9_]+', '', tweet,flags=regex.UNICODE)
@@ -45,5 +51,26 @@ class Tweet:
 		  	tweet = regex.sub(r'[,\.@^%:"\']+',' ', tweet,flags=regex.UNICODE)
 		  	#remove extra spaces
 		  	tweet  = " ".join(tweet.split()).strip()
+
 		  	self.cleanText = tweet
+
+		  	if NORM:
+		  		tweet = self.normalize(tweet)
+
 	  		return tweet
+	
+
+	def normalize(self,text):					
+		normTweet = text
+	  	normLetters = {"ة":"ه","ى":"ي","أ":"ا","إ":"ا","آ":"ا","الأ":"الا","الإ":"الا","الآ":"الا","ﻷ":"لا"}
+	  	for  k in normLetters.keys():
+	  		if k in normTweet:
+	  			normTweet = normTweet.replace(k,normLetters[k])
+	  	
+		return normTweet
+
+
+
+
+
+

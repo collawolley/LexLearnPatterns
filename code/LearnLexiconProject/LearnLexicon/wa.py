@@ -37,7 +37,7 @@ parser.add_argument('-c','--config', help='Input Config file name',required=True
 args = parser.parse_args()
 
 config = Config(args.config)
-reservedKeywords = list(config.Options["female_entity"])+list(config.Options["entity"])+list(config.Options["male_entity"])+list(config.Options["negators"])+list(config.Options["intensifier"])+list(config.Options["take_another_word_extend"])+list(config.Options["skip_if"])+list(config.Options["pointer"])+list(config.Options["person_pointer"])+list(config.Options["stopword"])+list(config.Options["stop_letter"])+list(config.Options["call"])+list(config.Options["conjunction"])+ ["ال"+i for i in list(config.Options["take_another_word_extend"])] 
+reservedKeywords = list(config.Options["female_entity"])+list(config.Options["entity"])+list(config.Options["male_entity"])+list(config.Options["negators"])+list(config.Options["intensifier_extend"])+list(config.Options["take_another_word_extend"])+list(config.Options["skip_if"])+list(config.Options["pointer"])+list(config.Options["person_pointer"])+list(config.Options["stopword"])+list(config.Options["stop_letter"])+list(config.Options["call"])+list(config.Options["conjunction"])+ ["ال"+i for i in list(config.Options["take_another_word_extend"])] 
 
 def writeToFile(text):
 	with open(args.output, "a") as myfile:		
@@ -49,7 +49,7 @@ def isReserved(word):
 
 
 #GoodKeywords = ["محترم","جميل","محترمة"] 
-GoodKeywords = ["حصري","حلو","طيب","عادي","خلوق","مميز","متميز","سلس","بسيط","متألق","راقي","متواضع","جميل","محترم","رائع","رايق","محترمة","حلوة","ممتع","جديد","مبدع","فايق"]
+GoodKeywords = ["حصري","حلو","طيب","رائع","عادي","خلوق","مختلف","مميز","سهل","لطيف","سعيد","سلس","بسيط","الحمد","نعم","خاص","كويس","متألق","خفيف","راقي","متواضع","يسر","راح","جميل","محترم","رايق","محترمة","مؤدب","حلوة","ممتع","جديد","مبدع","فايق","متميز","حبوب"]
 
 #GoodKeywords = ["و","انت","يا","ا"]
 
@@ -66,7 +66,7 @@ while True:
 		if len(result) > 0 :
 			#find 1grams of the resulted word
 			for tweet in result:
-				r = tweet.clean()
+				r = tweet.clean(True)
 				searchString = w + " و "				 							
 				pos = r.find(searchString.decode("utf-8"))
 				w2 = ""				
@@ -92,7 +92,7 @@ while True:
 							searchString2 = w2.encode("utf-8") + " و " + w
 							found = False 
 							for t in r2:
-								text = t.clean()
+								text = t.clean(True)
 								if text.find(searchString2.decode("utf-8")) is not -1 :
 									found = True							
 
