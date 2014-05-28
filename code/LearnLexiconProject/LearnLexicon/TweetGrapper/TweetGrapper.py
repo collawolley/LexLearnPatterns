@@ -18,7 +18,8 @@ import json
 import time
 
 LOCATIONS = {
-'egypt': [22.187405, 26.561508, 31.353637, 36.207504],
+#'egypt': [22.187405, 26.561508, 31.353637, 36.207504],
+'egypt': [23.422929, 27.418670, 30.883369, 34.142303],
 'cairo': [29.965643, 31.14682, 30.157002, 31.549194]
 }
 
@@ -38,12 +39,13 @@ class StdOutListener(StreamListener):
   def on_data(self, data):                
     text = json.loads(data)['text']
     id = json.loads(data)['id']  
-    
-    country = None
+    lang = json.loads(data)['lang']  
+        
+    country = None    
     if json.loads(data)['place'] is not None :       
       country = json.loads(data)['place']['name']
 
-    tweet = Tweet(id,text,country= country)
+    tweet = Tweet(id,text,country= country,language = lang)
     self.method(tweet)
     StdOutListener.counter += 1
 
@@ -58,21 +60,21 @@ class StdOutListener(StreamListener):
 
 #consumer_token,consumer_secret,ACCESS_TOKEN,ACCESS_TOKEN_SECRET
 KEYS = [
+["MsI2UNEWsDj4LXjsL0cNveHvh","Fn6g3sirU8BBt65B6bJpoBrzN1x3aLV6HAc3BfpGG0p2d8uYAI","2512633687-bPQtSlC1OrXz4vfHq8oo3Uf8XGlrVBqT1ORb65v","u58LN8VhuDC0zPlZ5YMDL8mV8822iavtn7MItjva0x4Pb"],
 ["cXA1X446gnZVNFCUuWYavod6U","j9lUDCUyIibJpMF1p29mX5DiFMNbcvuk580q6O0ftp8UAJWW9Y","2512427384-RDkrZCuvVamZckF446FLfXSRYMjAmOCZI4rayfF","RTTSVZKNoPBfq4l6GxRL6bWLanTvCPYwnIMyp9TnZVTiH"],
 ["VJwKpL0Lx90RbtHcLTqTrZSpR","K5u0TA01s0CTwcbDjR9ehZ6ryGaNT0AaeonIV6PBkdb5WqADJC","2512515884-uJitqG6443AbEVQDq5SAUDb2N2IGjHzwv0dJT0J","lw7EkiVaLc7waWGQpW9p6H6xqASxTKNekgHBPIAxkffzQ"],
-["MsI2UNEWsDj4LXjsL0cNveHvh","Fn6g3sirU8BBt65B6bJpoBrzN1x3aLV6HAc3BfpGG0p2d8uYAI","2512633687-bPQtSlC1OrXz4vfHq8oo3Uf8XGlrVBqT1ORb65v","u58LN8VhuDC0zPlZ5YMDL8mV8822iavtn7MItjva0x4Pb"],
 ["IVGTcvVHafHAieO1mQ7tkNR9C","OUtW8Ce1UC9N5ihL9GjMhwSG94eyaOURtoUkI1ksJ3MrpB9Ksw","158681231-LPztIzse604LkQmWmthnemkB3l71Bp4GsEp5ulf7","ao1eKOONDPxKp1xIdm4z42pl77kwxRfxL9AEmrHYkRQDC"],
-["2mTxwXl2N2PSS9q0753KClYz8","vKJw0QRaeq7ohMIQ4ubsLjwf8wDSswwaPBVyzMiUhrJwGkSU9z","158681231-bd6lLKj34S2DVEU4FonO6lb86xLC2PnDEbj4kjYK","cpKIxPci94NaSc9QF10JRM99las8Nx05UtthvHkvTK2u2"],
-["IVGTcvVHafHAieO1mQ7tkNR9C","OUtW8Ce1UC9N5ihL9GjMhwSG94eyaOURtoUkI1ksJ3MrpB9Ksw","158681231-LPztIzse604LkQmWmthnemkB3l71Bp4GsEp5ulf7","ao1eKOONDPxKp1xIdm4z42pl77kwxRfxL9AEmrHYkRQDC"],
-["UaoUUazXQerf7lXVQyBofwojf","oyPDO1xqbbWpaF5Bi1sL1KYd0eWkUr9WFoPsh30QvIpAjNivB8","2512427384-YS9fudbQbLAVVb73nmViNOjDQKdQcsOmVgTSm4k","jAf4Fy8qtY6ALg0hwTtche5vl8XOX5Jm4jzKf07pMeL6R"],
-["JVg5hvFv7QEkGz87JPOh28jdc","I69unoJD9bWm3Nmq0J4Gqut6Vz39RmrRjqDxgp4pbQLpwpJZjN","2512633687-NSVZHJ2NHsWAPREVjGcrUTU8Cr29YdJJncPvaWw","5CCK3XhOLHe004pDlNJWku2sH0FW8zWGCz0VuvxitiaxX"],
-["B8Hyp2CMBh4ymVdKlmMdyR6RR","TC8AO4c0MQPn5BSihGkwgjaqE8oL4gNSZ7fRXtdNw1xD9kQLr2","2512633687-h5nYNWaq2KYXIhju7cyMwXYlrpPB8FWFtCBhKte","futpoDmzy55M7nhJzPlOkYd9pM2YOUOUHJu4yP9PKRdq5"],
 ["4WtoSaSUwwWuziIaBEMNsvWh0","4O0yH33ivMCO0ZuIq3TlZe38N3Y8eqg9WzQkn3NSgVTrV6srZK","2512672214-yFRDDBJY1MESaIdS66MnFRg1ysoQgxUtshnmV11","SdWo9RgEEATLlQD7jJzSelLSMpgzDYgJWpgarS5VnFUXo"],
 ["BFu6JIuczLsSeCn1JqTqauKic","jZNXTprHGoJ4rxBrvhhCP6MjnnPxASVLtwIe3nntwee7aq7VGD","2512672214-4Lv7sq1a2zJZMPxihvI5xjcUndD1FHIf3lK7Z1q","tCPXolJ6cDYTCCoAFXuBiVsTRqXUWSHanZwxyBDAU9ENJ"],
 ["zYSgMBAvoaO0gX7M7kODA16hs","BeOmW9WSRkL2mV6Vy5I8UBWfORXMu4iNeLOgcpNx9CG8zHvnwH","2515365720-Im7XECvVQ5EvjKbMbc7KU3fADuFJoP7P6tmxvtC","nJZlY3qY8ZDlw9ZMu8X6MDL5Nb4RVyGJRB9SPaYSjWCYi"],
 ["NVLCfupbMHq2lWQVVxXgkGwj1","ZnrKtFFZXbHeURaJNDaFGUlYNZY7y3oPbrYYl5m3BJlKFoo7zY","2515365720-KHtcCXMoUU6vqkkWjHi3QnRZaShouBdXNrM8ggo","WStIGMEAbEWihNCRoXFkHalzYjl0DwdxRkzB3rAMe1Ivl"],
 ["IVGTcvVHafHAieO1mQ7tkNR9C","OUtW8Ce1UC9N5ihL9GjMhwSG94eyaOURtoUkI1ksJ3MrpB9Ksw","158681231-LPztIzse604LkQmWmthnemkB3l71Bp4GsEp5ulf7","ao1eKOONDPxKp1xIdm4z42pl77kwxRfxL9AEmrHYkRQDC"],
-["xZPk9vebxkLfnKxyVGZK4QWJF","HiJ1ZQmsOodiDysTUdH3xu5xWtqa42UIP2asbcCD5fDZefyqNf","2515365720-K9CS3m9iEYlIWWLshN6xtyepe3F6A6h3F4tCvE2","n97DSSeVsCQLVQLYITzeCQVN6YjCIlaeZaSDTBrn52Qts"]
+["UaoUUazXQerf7lXVQyBofwojf","oyPDO1xqbbWpaF5Bi1sL1KYd0eWkUr9WFoPsh30QvIpAjNivB8","2512427384-YS9fudbQbLAVVb73nmViNOjDQKdQcsOmVgTSm4k","jAf4Fy8qtY6ALg0hwTtche5vl8XOX5Jm4jzKf07pMeL6R"],
+["JVg5hvFv7QEkGz87JPOh28jdc","I69unoJD9bWm3Nmq0J4Gqut6Vz39RmrRjqDxgp4pbQLpwpJZjN","2512633687-NSVZHJ2NHsWAPREVjGcrUTU8Cr29YdJJncPvaWw","5CCK3XhOLHe004pDlNJWku2sH0FW8zWGCz0VuvxitiaxX"],
+["B8Hyp2CMBh4ymVdKlmMdyR6RR","TC8AO4c0MQPn5BSihGkwgjaqE8oL4gNSZ7fRXtdNw1xD9kQLr2","2512633687-h5nYNWaq2KYXIhju7cyMwXYlrpPB8FWFtCBhKte","futpoDmzy55M7nhJzPlOkYd9pM2YOUOUHJu4yP9PKRdq5"],
+["xZPk9vebxkLfnKxyVGZK4QWJF","HiJ1ZQmsOodiDysTUdH3xu5xWtqa42UIP2asbcCD5fDZefyqNf","2515365720-K9CS3m9iEYlIWWLshN6xtyepe3F6A6h3F4tCvE2","n97DSSeVsCQLVQLYITzeCQVN6YjCIlaeZaSDTBrn52Qts"],
+["IVGTcvVHafHAieO1mQ7tkNR9C","OUtW8Ce1UC9N5ihL9GjMhwSG94eyaOURtoUkI1ksJ3MrpB9Ksw","158681231-LPztIzse604LkQmWmthnemkB3l71Bp4GsEp5ulf7","ao1eKOONDPxKp1xIdm4z42pl77kwxRfxL9AEmrHYkRQDC"],
+["2mTxwXl2N2PSS9q0753KClYz8","vKJw0QRaeq7ohMIQ4ubsLjwf8wDSswwaPBVyzMiUhrJwGkSU9z","158681231-bd6lLKj34S2DVEU4FonO6lb86xLC2PnDEbj4kjYK","cpKIxPci94NaSc9QF10JRM99las8Nx05UtthvHkvTK2u2"]
 ]
 
 
@@ -151,6 +153,17 @@ class TweetGrapper:
     
     stream = Stream(self.auth, l)
     stream.filter(track=l.keywords)
+
+  def streamlocation(self,method,loc="egypt",lang="ar"):
+
+    l = StdOutListener(method)    
+
+    locs = LOCATIONS[loc]
+    langs = [lang]
+    
+    stream = Stream(self.auth, l)
+    stream.filter(locations=locs)
+
 
 
   def streamloop(self,keywords,method,loc="egypt",lang="ar"):

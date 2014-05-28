@@ -26,11 +26,12 @@ from TweetGrapper.TweetGrapper import *
 # command line arguments:
 parser = argparse.ArgumentParser(description='tool to Grap tweets from twitter API - show on console or write to  output file- giving some input words from text file - or search keywords -- [[optional]] clean tweets')
 parser.add_argument('-mode','--mode', help='either "search" or "stream" ',required=True)
-parser.add_argument('-i','--input', help='Input file name contains keywords to search for',required=True)
+parser.add_argument('-i','--input', help='Input file name contains keywords to search for',required=False)
 parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= False)
 parser.add_argument('-c','--clean',help='clean tweets by removal or  RT  , Twitter username , Elongations and non alphanumericals', required= False , action="store_true")
 parser.add_argument('-kw','--showkw',help='show keyword that was used to get the tweet before the tweet itself separated by a tab', required= False , action="store_true")
 parser.add_argument('-showloc','--showloc',help='show location of tweet if existing', required= False , action="store_true")
+parser.add_argument('-showlang','--showlang',help='show language of tweet', required= False , action="store_true")
 parser.add_argument('-id','--showid',help='show id of the tweet before the tweet itself separated by a tab', required= False , action="store_true")
 parser.add_argument('-u','--uniq',help='extract uniq list of tweets of input file to outputfile based on cosine Similarity', required= False, action="store_true")
 parser.add_argument('-l','--lang',help='specify language of the tweets', required= False)
@@ -45,6 +46,10 @@ if args.uniq is True and args.output is None:
 
 if args.showkw is True and args.mode.lower() in "stream":
   parser.error('showing keyword is not implemented yet with streaming mode')
+
+
+if "streamlocation" != args.mode.lower() and args.input is None :
+  parser.error('should specify input keywords file unless in streamlocation mode')
 
 
 ######--- Helper functions
@@ -64,6 +69,9 @@ def writeTweet(tweet):
       tweetText =  "None" +'\t'+ tweetText
     else :
       tweetText =  tweet.country +'\t'+ tweetText
+
+  if args.showlang is True : 
+    tweetText = str(tweet.language) +'\t'+ tweetText
 
   if args.showkw is True and tweet.searchKeyword is not None: 
     tweetText = tweet.searchKeyword +'\t'+ tweetText
@@ -103,6 +111,19 @@ elif "stream"  == args.mode.lower():
     grap.stream(keywords,writeTweet,args.location,args.lang)
   else : 
     grap.stream(keywords,writeTweet)
+
+
+#STREAMLocation mode
+#------------------
+elif "streamlocation"  == args.mode.lower():
+  print "Activating stream mode by location "  
+
+  if args.location is not None and args.lang is not None : 
+    grap.streamlocation(writeTweet,args.location,args.lang)
+  else : 
+    grap.streamlocation(writeTweet)
+
+  
 
 
 #Streamloop Mode
