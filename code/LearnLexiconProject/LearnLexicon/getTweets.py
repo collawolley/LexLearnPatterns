@@ -30,11 +30,13 @@ parser.add_argument('-i','--input', help='Input file name contains keywords to s
 parser.add_argument('-o','--output',help='Output file name - print in console if not specified', required= False)
 parser.add_argument('-c','--clean',help='clean tweets by removal or  RT  , Twitter username , Elongations and non alphanumericals', required= False , action="store_true")
 parser.add_argument('-kw','--showkw',help='show keyword that was used to get the tweet before the tweet itself separated by a tab', required= False , action="store_true")
+parser.add_argument('-showloc','--showloc',help='show location of tweet if existing', required= False , action="store_true")
 parser.add_argument('-id','--showid',help='show id of the tweet before the tweet itself separated by a tab', required= False , action="store_true")
 parser.add_argument('-u','--uniq',help='extract uniq list of tweets of input file to outputfile based on cosine Similarity', required= False, action="store_true")
 parser.add_argument('-l','--lang',help='specify language of the tweets', required= False)
 parser.add_argument('-loc','--location', help='activate search mode and capture keyword for search',required=False)
 parser.add_argument('-sep','--separator',help='separator used to separate between tweets , otherwise newline is used ', required= False)
+
 
 args = parser.parse_args()
 
@@ -54,10 +56,15 @@ def writeTweet(tweet):
   else :
     tweetText = tweet.simpleText()
 
-
   if args.showid is True : 
     tweetText = str(tweet.id) +'\t'+ tweetText
-      
+  
+  if args.showloc is True : 
+    if tweet.country is  None :
+      tweetText =  "None" +'\t'+ tweetText
+    else :
+      tweetText =  tweet.country +'\t'+ tweetText
+
   if args.showkw is True and tweet.searchKeyword is not None: 
     tweetText = tweet.searchKeyword +'\t'+ tweetText
 
@@ -82,16 +89,28 @@ grap = TweetGrapper()
 #Search Mode
 #------------------
 if  "search" == args.mode.lower():   
-  print "Activating search mode"
-  grap.search(keywords,writeTweet)
+  print "Activating search mode"  
+  if args.location is not None and args.lang is not None : 
+    grap.search(keywords,writeTweet,args.location,args.lang)
+  else :     
+    grap.search(keywords,writeTweet)
+
 #STREAM Mode
 #------------------
 elif "stream"  == args.mode.lower():
   print "Activating stream mode"
-  grap.stream(keywords,writeTweet)
+  if args.location is not None and args.lang is not None : 
+    grap.stream(keywords,writeTweet,args.location,args.lang)
+  else : 
+    grap.stream(keywords,writeTweet)
+
 
 #Streamloop Mode
 #------------------
 elif "streamloop" == args.mode.lower():
   print "Activating streamloop mode"
-  grap.streamloop(keywords,writeTweet)
+  if args.location is not None and args.lang is not None : 
+    grap.streamloop(keywords,writeTweet,args.location,args.lang)
+  else : 
+    grap.streamloop(keywords,writeTweet)
+

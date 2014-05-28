@@ -8,7 +8,7 @@ import regex
 
 
 class Tweet:
-	def __init__(self,id,text,language="ar",polarity=None,searchKeyword=None):
+	def __init__(self,id,text,language="ar",polarity=None,searchKeyword=None,country=None):
 		self.id = id 
 		self.text = text
 		self.language = language
@@ -16,6 +16,7 @@ class Tweet:
 		self.searchKeyword = searchKeyword
 		self.cleanText = None
 		self.normText = None
+		self.country = country 		
 
 
 	def __str__(self):
@@ -64,8 +65,10 @@ class Tweet:
 		normTweet = text
 	  	normLetters = {"ة":"ه","ى":"ي","أ":"ا","إ":"ا","آ":"ا","الأ":"الا","الإ":"الا","الآ":"الا","ﻷ":"لا"}
 	  	for  k in normLetters.keys():
-	  		if k in normTweet:
-	  			normTweet = normTweet.replace(k,normLetters[k])
+	  		w = k.decode("utf-8")
+	  		R = normLetters[k].decode("utf-8")
+	  		if w in normTweet:
+	  			normTweet = normTweet.replace(w,R)
 	  	
 		return normTweet
 
